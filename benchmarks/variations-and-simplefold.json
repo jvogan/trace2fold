@@ -1,0 +1,4609 @@
+{
+  "schema_version": 1,
+  "coordinate_free": true,
+  "variations_60call": {
+    "planned_evaluations": 60,
+    "representations": {
+      "vectors": "indexed Cα coordinates plus derived local backbone orientation vectors",
+      "geometry": "pure-Cα representation using indexed Cα coordinates"
+    },
+    "scoring": {
+      "profile": "spacefill-v4",
+      "weights": {
+        "aligned_coverage": 0.4,
+        "ca_lddt": 0.25,
+        "contact_f1": 0.35
+      },
+      "score_range": [
+        0,
+        100
+      ],
+      "aligned_cutoffs_angstrom": [
+        0.5,
+        1,
+        2,
+        4
+      ],
+      "valid_fold_inputs": 128,
+      "consensus": "Arithmetic mean of ESMFold2 and Boltz-2 assigned scores.",
+      "native_judges": {
+        "esmfold2": {
+          "model": "biohub/ESMFold2-Fast",
+          "seed": 0,
+          "msa": false,
+          "templates": false,
+          "folds": {
+            "completed": 1,
+            "reused": 127,
+            "pending": 0,
+            "failed": 0
+          },
+          "manifest_sha256": "49efc9dc8859297933f5cb0c60a4d9f3fa967912f909a855d87f805de00c1d29",
+          "protocol_sha256": "eaadb2131177125b5efe2966e7173e9061d9cf3cffc23c1d93728cb5d17be556"
+        },
+        "boltz2": {
+          "model": "boltz-community/boltz-2",
+          "seed": 0,
+          "msa": false,
+          "templates": false,
+          "folds": {
+            "completed": 1,
+            "reused": 127,
+            "pending": 0,
+            "failed": 0
+          },
+          "manifest_sha256": "d39cb9587ac7d383d3d587f108edade084a5535728535fa5ce4eb470769e9fb9",
+          "protocol_sha256": "5f1c6d4a616272691bd5f165f7f250437c24e0585c971e0a6425a42365eb4259"
+        }
+      }
+    },
+    "vectors_minus_pure_ca": {
+      "stage1": {
+        "shapes_total": 24,
+        "all_six_consensus_delta": 1.51,
+        "all_six_esmfold2_delta": 2.82,
+        "all_six_boltz2_delta": 0.21,
+        "by_model": [
+          {
+            "model": "Gemini 4 Carbon High",
+            "shapes": 4,
+            "consensus_delta": 20.09,
+            "esmfold2_delta": 21.64,
+            "boltz2_delta": 18.52
+          },
+          {
+            "model": "Gemini 4 Neon High",
+            "shapes": 4,
+            "consensus_delta": 19.05,
+            "esmfold2_delta": 20.24,
+            "boltz2_delta": 17.86
+          },
+          {
+            "model": "GPT-6.2 Astra High",
+            "shapes": 4,
+            "consensus_delta": 4.37,
+            "esmfold2_delta": 1.51,
+            "boltz2_delta": 7.22
+          },
+          {
+            "model": "GPT-6.2 Sol High",
+            "shapes": 4,
+            "consensus_delta": -15.12,
+            "esmfold2_delta": -8.22,
+            "boltz2_delta": -22.03
+          },
+          {
+            "model": "Claude Opus 5.5 High",
+            "shapes": 4,
+            "consensus_delta": 5.45,
+            "esmfold2_delta": 6.08,
+            "boltz2_delta": 4.83
+          },
+          {
+            "model": "GLM 5.3 Flash Max",
+            "shapes": 4,
+            "consensus_delta": -24.74,
+            "esmfold2_delta": -24.32,
+            "boltz2_delta": -25.16
+          }
+        ]
+      },
+      "stage2": {
+        "shapes_total": 12,
+        "all_six_consensus_delta": -0.61,
+        "all_six_esmfold2_delta": -4.91,
+        "all_six_boltz2_delta": 3.69,
+        "by_model": [
+          {
+            "model": "GPT-6.2 Astra High",
+            "shapes": 2,
+            "consensus_delta": 9.43,
+            "esmfold2_delta": 7.36,
+            "boltz2_delta": 11.49
+          },
+          {
+            "model": "Gemini 4 Carbon High",
+            "shapes": 2,
+            "consensus_delta": -0.1,
+            "esmfold2_delta": -6.33,
+            "boltz2_delta": 6.14
+          },
+          {
+            "model": "GLM 5.3 Flash Max",
+            "shapes": 2,
+            "consensus_delta": -1.76,
+            "esmfold2_delta": -5.02,
+            "boltz2_delta": 1.5
+          },
+          {
+            "model": "Gemini 4 Neon High",
+            "shapes": 2,
+            "consensus_delta": -3.35,
+            "esmfold2_delta": -9.88,
+            "boltz2_delta": 3.17
+          },
+          {
+            "model": "GPT-6.2 Sol High",
+            "shapes": 2,
+            "consensus_delta": -5.34,
+            "esmfold2_delta": -8.02,
+            "boltz2_delta": -2.65
+          },
+          {
+            "model": "Claude Opus 5.5 High",
+            "shapes": 2,
+            "consensus_delta": -2.54,
+            "esmfold2_delta": -7.54,
+            "boltz2_delta": 2.46
+          }
+        ]
+      }
+    },
+    "genie3_pure_ca_pairs": {
+      "g3_p01_l80_helical": [
+        {
+          "model": "Cα-ProteinMPNN (4 draws)",
+          "kind": "control",
+          "consensus": 93.06,
+          "esmfold2": 93.6,
+          "boltz2": 92.52,
+          "simplefold": 90.6
+        },
+        {
+          "model": "Gemini 4 Carbon High",
+          "kind": "contestant",
+          "consensus": 69.37,
+          "esmfold2": 71.47,
+          "boltz2": 67.27,
+          "simplefold": 67.68
+        },
+        {
+          "model": "Gemini 4 Neon High",
+          "kind": "contestant",
+          "consensus": 59.03,
+          "esmfold2": 56.72,
+          "boltz2": 61.35,
+          "simplefold": 59.3
+        },
+        {
+          "model": "GPT-6.2 Sol High",
+          "kind": "contestant",
+          "consensus": 45.97,
+          "esmfold2": 48.16,
+          "boltz2": 43.76,
+          "simplefold": 50.62
+        },
+        {
+          "model": "GPT-6.2 Astra High",
+          "kind": "contestant",
+          "consensus": 41.65,
+          "esmfold2": 37.38,
+          "boltz2": 45.93,
+          "simplefold": 36.17
+        },
+        {
+          "model": "Claude Opus 5.5 High",
+          "kind": "contestant",
+          "consensus": 19.03,
+          "esmfold2": 18.4,
+          "boltz2": 19.67,
+          "simplefold": 18.47
+        },
+        {
+          "model": "GLM 5.3 Flash Max",
+          "kind": "contestant",
+          "consensus": 0.0,
+          "esmfold2": 0.0,
+          "boltz2": 0.0,
+          "simplefold": 0.0
+        },
+        {
+          "model": "Composition shuffle",
+          "kind": "control",
+          "consensus": 9.77,
+          "esmfold2": 10.13,
+          "boltz2": 9.41,
+          "simplefold": 9.29
+        },
+        {
+          "model": "Local secondary-structure rule",
+          "kind": "control",
+          "consensus": 15.43,
+          "esmfold2": 15.35,
+          "boltz2": 15.5,
+          "simplefold": 23.66
+        }
+      ],
+      "g3_p02_l112_helical": [
+        {
+          "model": "Cα-ProteinMPNN (4 draws)",
+          "kind": "control",
+          "consensus": 91.08,
+          "esmfold2": 90.4,
+          "boltz2": 91.76,
+          "simplefold": 89.07
+        },
+        {
+          "model": "Gemini 4 Neon High",
+          "kind": "contestant",
+          "consensus": 54.8,
+          "esmfold2": 45.99,
+          "boltz2": 63.6,
+          "simplefold": 58.35
+        },
+        {
+          "model": "Gemini 4 Carbon High",
+          "kind": "contestant",
+          "consensus": 51.6,
+          "esmfold2": 53.77,
+          "boltz2": 49.44,
+          "simplefold": 53.43
+        },
+        {
+          "model": "GPT-6.2 Sol High",
+          "kind": "contestant",
+          "consensus": 30.02,
+          "esmfold2": 28.65,
+          "boltz2": 31.41,
+          "simplefold": 24.59
+        },
+        {
+          "model": "GPT-6.2 Astra High",
+          "kind": "contestant",
+          "consensus": 22.07,
+          "esmfold2": 22.14,
+          "boltz2": 22.0,
+          "simplefold": 19.48
+        },
+        {
+          "model": "GLM 5.3 Flash Max",
+          "kind": "contestant",
+          "consensus": 8.87,
+          "esmfold2": 10.04,
+          "boltz2": 7.7,
+          "simplefold": 10.31
+        },
+        {
+          "model": "Claude Opus 5.5 High",
+          "kind": "contestant",
+          "consensus": 6.38,
+          "esmfold2": 6.53,
+          "boltz2": 6.24,
+          "simplefold": 5.38
+        },
+        {
+          "model": "Composition shuffle",
+          "kind": "control",
+          "consensus": 9.35,
+          "esmfold2": 9.14,
+          "boltz2": 9.55,
+          "simplefold": 7.87
+        },
+        {
+          "model": "Local secondary-structure rule",
+          "kind": "control",
+          "consensus": 12.85,
+          "esmfold2": 13.54,
+          "boltz2": 12.16,
+          "simplefold": 17.84
+        }
+      ]
+    },
+    "cells": {
+      "vectors_vs_pure_ca": [
+        {
+          "stage": "stage1",
+          "pair": "S1-P01",
+          "target": "S1-P01-A",
+          "length": 48,
+          "family": "beta",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 90.0,
+            "esmfold2": 89.03,
+            "boltz2": 90.96,
+            "simplefold": 89.68
+          },
+          "pure_ca": {
+            "consensus": 74.95,
+            "esmfold2": 94.94,
+            "boltz2": 54.97,
+            "simplefold": 35.52
+          },
+          "delta": {
+            "consensus": 15.05,
+            "esmfold2": -5.91,
+            "boltz2": 35.99,
+            "simplefold": 54.16
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P01",
+          "target": "S1-P01-A",
+          "length": 48,
+          "family": "beta",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 93.33,
+            "esmfold2": 93.21,
+            "boltz2": 93.46,
+            "simplefold": 91.95
+          },
+          "pure_ca": {
+            "consensus": 52.52,
+            "esmfold2": 50.52,
+            "boltz2": 54.53,
+            "simplefold": 50.97
+          },
+          "delta": {
+            "consensus": 40.81,
+            "esmfold2": 42.69,
+            "boltz2": 38.93,
+            "simplefold": 40.98
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P01",
+          "target": "S1-P01-A",
+          "length": 48,
+          "family": "beta",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 86.15,
+            "esmfold2": 87.47,
+            "boltz2": 84.83,
+            "simplefold": 84.21
+          },
+          "pure_ca": {
+            "consensus": 86.04,
+            "esmfold2": 87.73,
+            "boltz2": 84.35,
+            "simplefold": 84.04
+          },
+          "delta": {
+            "consensus": 0.11,
+            "esmfold2": -0.26,
+            "boltz2": 0.48,
+            "simplefold": 0.17
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P01",
+          "target": "S1-P01-A",
+          "length": 48,
+          "family": "beta",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 4.19,
+            "esmfold2": 5.03,
+            "boltz2": 3.36,
+            "simplefold": 3.02
+          },
+          "pure_ca": {
+            "consensus": 76.72,
+            "esmfold2": 80.56,
+            "boltz2": 72.88,
+            "simplefold": 52.85
+          },
+          "delta": {
+            "consensus": -72.53,
+            "esmfold2": -75.53,
+            "boltz2": -69.52,
+            "simplefold": -49.83
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P01",
+          "target": "S1-P01-A",
+          "length": 48,
+          "family": "beta",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 87.38,
+            "esmfold2": 87.74,
+            "boltz2": 87.03,
+            "simplefold": 87.92
+          },
+          "pure_ca": {
+            "consensus": 91.6,
+            "esmfold2": 92.39,
+            "boltz2": 90.81,
+            "simplefold": 92.2
+          },
+          "delta": {
+            "consensus": -4.22,
+            "esmfold2": -4.65,
+            "boltz2": -3.78,
+            "simplefold": -4.28
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P01",
+          "target": "S1-P01-A",
+          "length": 48,
+          "family": "beta",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "vectors": {
+            "consensus": 0.0,
+            "esmfold2": 0.0,
+            "boltz2": 0.0,
+            "simplefold": 0.0
+          },
+          "pure_ca": {
+            "consensus": 91.99,
+            "esmfold2": 93.82,
+            "boltz2": 90.17,
+            "simplefold": 92.94
+          },
+          "delta": {
+            "consensus": -91.99,
+            "esmfold2": -93.82,
+            "boltz2": -90.17,
+            "simplefold": -92.94
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P02",
+          "target": "S1-P02-A",
+          "length": 80,
+          "family": "beta",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 69.49,
+            "esmfold2": 72.04,
+            "boltz2": 66.94,
+            "simplefold": 76.29
+          },
+          "pure_ca": {
+            "consensus": 55.46,
+            "esmfold2": 43.34,
+            "boltz2": 67.58,
+            "simplefold": 58.26
+          },
+          "delta": {
+            "consensus": 14.03,
+            "esmfold2": 28.7,
+            "boltz2": -0.64,
+            "simplefold": 18.03
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P02",
+          "target": "S1-P02-A",
+          "length": 80,
+          "family": "beta",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 72.1,
+            "esmfold2": 72.05,
+            "boltz2": 72.15,
+            "simplefold": 47.24
+          },
+          "pure_ca": {
+            "consensus": 56.8,
+            "esmfold2": 47.32,
+            "boltz2": 66.28,
+            "simplefold": 50.13
+          },
+          "delta": {
+            "consensus": 15.3,
+            "esmfold2": 24.73,
+            "boltz2": 5.87,
+            "simplefold": -2.89
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P02",
+          "target": "S1-P02-A",
+          "length": 80,
+          "family": "beta",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 52.96,
+            "esmfold2": 37.13,
+            "boltz2": 68.79,
+            "simplefold": 47.02
+          },
+          "pure_ca": {
+            "consensus": 37.57,
+            "esmfold2": 36.67,
+            "boltz2": 38.48,
+            "simplefold": 17.45
+          },
+          "delta": {
+            "consensus": 15.39,
+            "esmfold2": 0.46,
+            "boltz2": 30.31,
+            "simplefold": 29.57
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P02",
+          "target": "S1-P02-A",
+          "length": 80,
+          "family": "beta",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 45.96,
+            "esmfold2": 43.92,
+            "boltz2": 48.0,
+            "simplefold": 50.35
+          },
+          "pure_ca": {
+            "consensus": 36.46,
+            "esmfold2": 34.09,
+            "boltz2": 38.84,
+            "simplefold": 35.03
+          },
+          "delta": {
+            "consensus": 9.5,
+            "esmfold2": 9.83,
+            "boltz2": 9.16,
+            "simplefold": 15.32
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P02",
+          "target": "S1-P02-A",
+          "length": 80,
+          "family": "beta",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 43.88,
+            "esmfold2": 37.84,
+            "boltz2": 49.92,
+            "simplefold": 32.16
+          },
+          "pure_ca": {
+            "consensus": 31.4,
+            "esmfold2": 21.84,
+            "boltz2": 40.97,
+            "simplefold": 21.17
+          },
+          "delta": {
+            "consensus": 12.48,
+            "esmfold2": 16.0,
+            "boltz2": 8.95,
+            "simplefold": 10.99
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P02",
+          "target": "S1-P02-A",
+          "length": 80,
+          "family": "beta",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "vectors": {
+            "consensus": 11.95,
+            "esmfold2": 14.62,
+            "boltz2": 9.29,
+            "simplefold": 12.05
+          },
+          "pure_ca": {
+            "consensus": 0.0,
+            "esmfold2": 0.0,
+            "boltz2": 0.0,
+            "simplefold": 0.0
+          },
+          "delta": {
+            "consensus": 11.95,
+            "esmfold2": 14.62,
+            "boltz2": 9.29,
+            "simplefold": 12.05
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P03",
+          "target": "S1-P03-A",
+          "length": 112,
+          "family": "helical",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 53.26,
+            "esmfold2": 56.7,
+            "boltz2": 49.81,
+            "simplefold": 47.82
+          },
+          "pure_ca": {
+            "consensus": 0.0,
+            "esmfold2": 0.0,
+            "boltz2": 0.0,
+            "simplefold": 0.0
+          },
+          "delta": {
+            "consensus": 53.26,
+            "esmfold2": 56.7,
+            "boltz2": 49.81,
+            "simplefold": 47.82
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P03",
+          "target": "S1-P03-A",
+          "length": 112,
+          "family": "helical",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 67.7,
+            "esmfold2": 69.19,
+            "boltz2": 66.21,
+            "simplefold": 38.85
+          },
+          "pure_ca": {
+            "consensus": 49.01,
+            "esmfold2": 47.36,
+            "boltz2": 50.65,
+            "simplefold": 54.64
+          },
+          "delta": {
+            "consensus": 18.69,
+            "esmfold2": 21.83,
+            "boltz2": 15.56,
+            "simplefold": -15.79
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P03",
+          "target": "S1-P03-A",
+          "length": 112,
+          "family": "helical",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 28.89,
+            "esmfold2": 33.16,
+            "boltz2": 24.62,
+            "simplefold": 25.89
+          },
+          "pure_ca": {
+            "consensus": 19.99,
+            "esmfold2": 24.79,
+            "boltz2": 15.19,
+            "simplefold": 13.03
+          },
+          "delta": {
+            "consensus": 8.9,
+            "esmfold2": 8.37,
+            "boltz2": 9.43,
+            "simplefold": 12.86
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P03",
+          "target": "S1-P03-A",
+          "length": 112,
+          "family": "helical",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 35.36,
+            "esmfold2": 48.77,
+            "boltz2": 21.95,
+            "simplefold": 35.42
+          },
+          "pure_ca": {
+            "consensus": 19.73,
+            "esmfold2": 19.89,
+            "boltz2": 19.56,
+            "simplefold": 20.16
+          },
+          "delta": {
+            "consensus": 15.63,
+            "esmfold2": 28.88,
+            "boltz2": 2.39,
+            "simplefold": 15.26
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P03",
+          "target": "S1-P03-A",
+          "length": 112,
+          "family": "helical",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 18.1,
+            "esmfold2": 16.63,
+            "boltz2": 19.57,
+            "simplefold": 36.36
+          },
+          "pure_ca": {
+            "consensus": 14.26,
+            "esmfold2": 14.2,
+            "boltz2": 14.32,
+            "simplefold": 12.2
+          },
+          "delta": {
+            "consensus": 3.84,
+            "esmfold2": 2.43,
+            "boltz2": 5.25,
+            "simplefold": 24.16
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P03",
+          "target": "S1-P03-A",
+          "length": 112,
+          "family": "helical",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "vectors": {
+            "consensus": 0.0,
+            "esmfold2": 0.0,
+            "boltz2": 0.0,
+            "simplefold": 0.0
+          },
+          "pure_ca": {
+            "consensus": 21.45,
+            "esmfold2": 20.98,
+            "boltz2": 21.91,
+            "simplefold": 14.82
+          },
+          "delta": {
+            "consensus": -21.45,
+            "esmfold2": -20.98,
+            "boltz2": -21.91,
+            "simplefold": -14.82
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P04",
+          "target": "S1-P04-A",
+          "length": 112,
+          "family": "mixed",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 51.37,
+            "esmfold2": 61.39,
+            "boltz2": 41.36,
+            "simplefold": 41.46
+          },
+          "pure_ca": {
+            "consensus": 53.37,
+            "esmfold2": 54.31,
+            "boltz2": 52.44,
+            "simplefold": 55.28
+          },
+          "delta": {
+            "consensus": -2.0,
+            "esmfold2": 7.08,
+            "boltz2": -11.08,
+            "simplefold": -13.82
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P04",
+          "target": "S1-P04-A",
+          "length": 112,
+          "family": "mixed",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 42.53,
+            "esmfold2": 37.54,
+            "boltz2": 47.52,
+            "simplefold": 50.95
+          },
+          "pure_ca": {
+            "consensus": 41.14,
+            "esmfold2": 45.84,
+            "boltz2": 36.44,
+            "simplefold": 37.8
+          },
+          "delta": {
+            "consensus": 1.39,
+            "esmfold2": -8.3,
+            "boltz2": 11.08,
+            "simplefold": 13.15
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P04",
+          "target": "S1-P04-A",
+          "length": 112,
+          "family": "mixed",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 41.45,
+            "esmfold2": 46.05,
+            "boltz2": 36.84,
+            "simplefold": 51.45
+          },
+          "pure_ca": {
+            "consensus": 48.37,
+            "esmfold2": 48.59,
+            "boltz2": 48.16,
+            "simplefold": 51.01
+          },
+          "delta": {
+            "consensus": -6.92,
+            "esmfold2": -2.54,
+            "boltz2": -11.32,
+            "simplefold": 0.44
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P04",
+          "target": "S1-P04-A",
+          "length": 112,
+          "family": "mixed",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 38.33,
+            "esmfold2": 47.94,
+            "boltz2": 28.72,
+            "simplefold": 28.44
+          },
+          "pure_ca": {
+            "consensus": 51.43,
+            "esmfold2": 44.01,
+            "boltz2": 58.86,
+            "simplefold": 45.55
+          },
+          "delta": {
+            "consensus": -13.1,
+            "esmfold2": 3.93,
+            "boltz2": -30.14,
+            "simplefold": -17.11
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P04",
+          "target": "S1-P04-A",
+          "length": 112,
+          "family": "mixed",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 36.78,
+            "esmfold2": 36.09,
+            "boltz2": 37.47,
+            "simplefold": 39.6
+          },
+          "pure_ca": {
+            "consensus": 27.07,
+            "esmfold2": 25.56,
+            "boltz2": 28.58,
+            "simplefold": 27.98
+          },
+          "delta": {
+            "consensus": 9.71,
+            "esmfold2": 10.53,
+            "boltz2": 8.89,
+            "simplefold": 11.62
+          }
+        },
+        {
+          "stage": "stage1",
+          "pair": "S1-P04",
+          "target": "S1-P04-A",
+          "length": 112,
+          "family": "mixed",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "vectors": {
+            "consensus": 27.32,
+            "esmfold2": 25.63,
+            "boltz2": 29.01,
+            "simplefold": 29.64
+          },
+          "pure_ca": {
+            "consensus": 24.8,
+            "esmfold2": 22.75,
+            "boltz2": 26.85,
+            "simplefold": 17.92
+          },
+          "delta": {
+            "consensus": 2.52,
+            "esmfold2": 2.88,
+            "boltz2": 2.16,
+            "simplefold": 11.72
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P01",
+          "target": "S2-P01-A",
+          "length": 176,
+          "family": "beta",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 40.17,
+            "esmfold2": 31.63,
+            "boltz2": 48.72,
+            "simplefold": 39.39
+          },
+          "pure_ca": {
+            "consensus": 36.75,
+            "esmfold2": 35.38,
+            "boltz2": 38.11,
+            "simplefold": 37.39
+          },
+          "delta": {
+            "consensus": 3.42,
+            "esmfold2": -3.75,
+            "boltz2": 10.61,
+            "simplefold": 2.0
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P01",
+          "target": "S2-P01-A",
+          "length": 176,
+          "family": "beta",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 40.69,
+            "esmfold2": 31.31,
+            "boltz2": 50.07,
+            "simplefold": 33.39
+          },
+          "pure_ca": {
+            "consensus": 30.88,
+            "esmfold2": 31.17,
+            "boltz2": 30.6,
+            "simplefold": 30.93
+          },
+          "delta": {
+            "consensus": 9.81,
+            "esmfold2": 0.14,
+            "boltz2": 19.47,
+            "simplefold": 2.46
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P01",
+          "target": "S2-P01-A",
+          "length": 176,
+          "family": "beta",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 25.31,
+            "esmfold2": 19.28,
+            "boltz2": 31.33,
+            "simplefold": 19.25
+          },
+          "pure_ca": {
+            "consensus": 11.48,
+            "esmfold2": 10.97,
+            "boltz2": 11.99,
+            "simplefold": 17.56
+          },
+          "delta": {
+            "consensus": 13.83,
+            "esmfold2": 8.31,
+            "boltz2": 19.34,
+            "simplefold": 1.69
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P01",
+          "target": "S2-P01-A",
+          "length": 176,
+          "family": "beta",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 0.0,
+            "esmfold2": 0.0,
+            "boltz2": 0.0,
+            "simplefold": 0.0
+          },
+          "pure_ca": {
+            "consensus": 20.81,
+            "esmfold2": 22.22,
+            "boltz2": 19.4,
+            "simplefold": 21.54
+          },
+          "delta": {
+            "consensus": -20.81,
+            "esmfold2": -22.22,
+            "boltz2": -19.4,
+            "simplefold": -21.54
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P01",
+          "target": "S2-P01-A",
+          "length": 176,
+          "family": "beta",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 17.41,
+            "esmfold2": 19.58,
+            "boltz2": 15.25,
+            "simplefold": 18.48
+          },
+          "pure_ca": {
+            "consensus": 20.13,
+            "esmfold2": 20.97,
+            "boltz2": 19.29,
+            "simplefold": 19.33
+          },
+          "delta": {
+            "consensus": -2.72,
+            "esmfold2": -1.39,
+            "boltz2": -4.04,
+            "simplefold": -0.85
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P01",
+          "target": "S2-P01-A",
+          "length": 176,
+          "family": "beta",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "vectors": {
+            "consensus": 0.0,
+            "esmfold2": 0.0,
+            "boltz2": 0.0,
+            "simplefold": 0.0
+          },
+          "pure_ca": {
+            "consensus": 8.09,
+            "esmfold2": 10.38,
+            "boltz2": 5.8,
+            "simplefold": 12.32
+          },
+          "delta": {
+            "consensus": -8.09,
+            "esmfold2": -10.38,
+            "boltz2": -5.8,
+            "simplefold": -12.32
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P02",
+          "target": "S2-P02-A",
+          "length": 176,
+          "family": "mixed",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 30.94,
+            "esmfold2": 30.38,
+            "boltz2": 31.51,
+            "simplefold": 36.43
+          },
+          "pure_ca": {
+            "consensus": 34.57,
+            "esmfold2": 39.3,
+            "boltz2": 29.84,
+            "simplefold": 47.25
+          },
+          "delta": {
+            "consensus": -3.63,
+            "esmfold2": -8.92,
+            "boltz2": 1.67,
+            "simplefold": -10.82
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P02",
+          "target": "S2-P02-A",
+          "length": 176,
+          "family": "mixed",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 39.45,
+            "esmfold2": 45.05,
+            "boltz2": 33.86,
+            "simplefold": 35.61
+          },
+          "pure_ca": {
+            "consensus": 55.97,
+            "esmfold2": 64.95,
+            "boltz2": 46.98,
+            "simplefold": 48.29
+          },
+          "delta": {
+            "consensus": -16.52,
+            "esmfold2": -19.9,
+            "boltz2": -13.12,
+            "simplefold": -12.68
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P02",
+          "target": "S2-P02-A",
+          "length": 176,
+          "family": "mixed",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 22.49,
+            "esmfold2": 23.64,
+            "boltz2": 21.34,
+            "simplefold": 25.01
+          },
+          "pure_ca": {
+            "consensus": 17.46,
+            "esmfold2": 17.23,
+            "boltz2": 17.69,
+            "simplefold": 27.73
+          },
+          "delta": {
+            "consensus": 5.03,
+            "esmfold2": 6.41,
+            "boltz2": 3.65,
+            "simplefold": -2.72
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P02",
+          "target": "S2-P02-A",
+          "length": 176,
+          "family": "mixed",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 26.72,
+            "esmfold2": 24.02,
+            "boltz2": 29.42,
+            "simplefold": 27.48
+          },
+          "pure_ca": {
+            "consensus": 16.59,
+            "esmfold2": 17.85,
+            "boltz2": 15.32,
+            "simplefold": 18.74
+          },
+          "delta": {
+            "consensus": 10.13,
+            "esmfold2": 6.17,
+            "boltz2": 14.1,
+            "simplefold": 8.74
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P02",
+          "target": "S2-P02-A",
+          "length": 176,
+          "family": "mixed",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "vectors": {
+            "consensus": 24.14,
+            "esmfold2": 19.38,
+            "boltz2": 28.9,
+            "simplefold": 19.27
+          },
+          "pure_ca": {
+            "consensus": 26.5,
+            "esmfold2": 33.07,
+            "boltz2": 19.94,
+            "simplefold": 22.44
+          },
+          "delta": {
+            "consensus": -2.36,
+            "esmfold2": -13.69,
+            "boltz2": 8.96,
+            "simplefold": -3.17
+          }
+        },
+        {
+          "stage": "stage2",
+          "pair": "S2-P02",
+          "target": "S2-P02-A",
+          "length": 176,
+          "family": "mixed",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "vectors": {
+            "consensus": 11.64,
+            "esmfold2": 7.83,
+            "boltz2": 15.45,
+            "simplefold": 12.69
+          },
+          "pure_ca": {
+            "consensus": 7.07,
+            "esmfold2": 7.49,
+            "boltz2": 6.65,
+            "simplefold": 6.6
+          },
+          "delta": {
+            "consensus": 4.57,
+            "esmfold2": 0.34,
+            "boltz2": 8.8,
+            "simplefold": 6.09
+          }
+        }
+      ],
+      "genie3": [
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 78.43,
+          "esmfold2": 84.24,
+          "boltz2": 72.62,
+          "simplefold": 84.28,
+          "twin_delta": 59.78
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 71.53,
+          "esmfold2": 64.18,
+          "boltz2": 78.88,
+          "simplefold": 76.59,
+          "twin_delta": 54.26
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 42.45,
+          "esmfold2": 32.48,
+          "boltz2": 52.42,
+          "simplefold": 38.24,
+          "twin_delta": 28.42
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 66.51,
+          "esmfold2": 67.89,
+          "boltz2": 65.12,
+          "simplefold": 72.53,
+          "twin_delta": 47.16
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 16.08,
+          "esmfold2": 15.1,
+          "boltz2": 17.07,
+          "simplefold": 14.87,
+          "twin_delta": 1.98
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "folded": false,
+          "consensus": 0.0,
+          "esmfold2": 0.0,
+          "boltz2": 0.0,
+          "simplefold": 0.0,
+          "twin_delta": 0.0
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 60.31,
+          "esmfold2": 58.7,
+          "boltz2": 61.92,
+          "simplefold": 51.08,
+          "twin_delta": 42.63
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 46.54,
+          "esmfold2": 49.26,
+          "boltz2": 43.83,
+          "simplefold": 42.01,
+          "twin_delta": 29.93
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 40.85,
+          "esmfold2": 42.27,
+          "boltz2": 39.44,
+          "simplefold": 34.11,
+          "twin_delta": 19.69
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 25.42,
+          "esmfold2": 28.43,
+          "boltz2": 22.4,
+          "simplefold": 28.71,
+          "twin_delta": 4.47
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 21.98,
+          "esmfold2": 21.7,
+          "boltz2": 22.27,
+          "simplefold": 22.07,
+          "twin_delta": 3.04
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "folded": false,
+          "consensus": 0.0,
+          "esmfold2": 0.0,
+          "boltz2": 0.0,
+          "simplefold": 0.0,
+          "twin_delta": 0.0
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 59.4,
+          "esmfold2": 45.87,
+          "boltz2": 72.93,
+          "simplefold": 66.07,
+          "twin_delta": 47.89
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 59.42,
+          "esmfold2": 44.44,
+          "boltz2": 74.41,
+          "simplefold": 68.89,
+          "twin_delta": 47.62
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 23.76,
+          "esmfold2": 23.93,
+          "boltz2": 23.6,
+          "simplefold": 21.08,
+          "twin_delta": 13.43
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 28.4,
+          "esmfold2": 29.35,
+          "boltz2": 27.45,
+          "simplefold": 24.97,
+          "twin_delta": 18.67
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 12.76,
+          "esmfold2": 13.05,
+          "boltz2": 12.48,
+          "simplefold": 10.77,
+          "twin_delta": 2.81
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "folded": true,
+          "consensus": 7.54,
+          "esmfold2": 8.7,
+          "boltz2": 6.38,
+          "simplefold": 10.34,
+          "twin_delta": -0.73
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-carbon-high",
+          "label": "Gemini 4 Carbon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 43.8,
+          "esmfold2": 61.66,
+          "boltz2": 25.95,
+          "simplefold": 40.8,
+          "twin_delta": 32.88
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gemini-4-neon-high",
+          "label": "Gemini 4 Neon High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 50.17,
+          "esmfold2": 47.55,
+          "boltz2": 52.8,
+          "simplefold": 47.81,
+          "twin_delta": 38.7
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-astra",
+          "label": "GPT-6.2 Astra High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 20.38,
+          "esmfold2": 20.36,
+          "boltz2": 20.4,
+          "simplefold": 17.87,
+          "twin_delta": 6.49
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "gpt-6.2-sol",
+          "label": "GPT-6.2 Sol High",
+          "effort": "high",
+          "folded": true,
+          "consensus": 31.65,
+          "esmfold2": 27.95,
+          "boltz2": 35.36,
+          "simplefold": 24.22,
+          "twin_delta": 18.84
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "claude-opus-5-5",
+          "label": "Claude Opus 5.5 High",
+          "effort": "high",
+          "folded": false,
+          "consensus": 0.0,
+          "esmfold2": 0.0,
+          "boltz2": 0.0,
+          "simplefold": 0.0,
+          "twin_delta": 0.0
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "contestant",
+          "model": "z-ai/glm-5.3-flash",
+          "label": "GLM 5.3 Flash Max",
+          "effort": "max",
+          "folded": true,
+          "consensus": 10.2,
+          "esmfold2": 11.39,
+          "boltz2": 9.02,
+          "simplefold": 10.29,
+          "twin_delta": 1.4
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "control",
+          "model": "ca-proteinmpnn",
+          "label": "Cα-ProteinMPNN (4 draws, internal likelihood)",
+          "effort": null,
+          "folded": true,
+          "consensus": 93.0,
+          "esmfold2": 94.0,
+          "boltz2": 92.01,
+          "simplefold": 90.88,
+          "twin_delta": 74.36
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "control",
+          "model": "composition-shuffle",
+          "label": "Composition shuffle",
+          "effort": null,
+          "folded": true,
+          "consensus": 9.89,
+          "esmfold2": 10.54,
+          "boltz2": 9.24,
+          "simplefold": 9.06,
+          "twin_delta": -0.1
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "control",
+          "model": "ca-proteinmpnn",
+          "label": "Cα-ProteinMPNN (4 draws, internal likelihood)",
+          "effort": null,
+          "folded": true,
+          "consensus": 93.11,
+          "esmfold2": 93.19,
+          "boltz2": 93.04,
+          "simplefold": 90.31,
+          "twin_delta": 74.32
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "control",
+          "model": "composition-shuffle",
+          "label": "Composition shuffle",
+          "effort": null,
+          "folded": true,
+          "consensus": 9.65,
+          "esmfold2": 9.73,
+          "boltz2": 9.57,
+          "simplefold": 9.53,
+          "twin_delta": 0.47
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "control",
+          "model": "ca-proteinmpnn",
+          "label": "Cα-ProteinMPNN (4 draws, internal likelihood)",
+          "effort": null,
+          "folded": true,
+          "consensus": 90.07,
+          "esmfold2": 91.05,
+          "boltz2": 89.09,
+          "simplefold": 87.52,
+          "twin_delta": 78.65
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "control",
+          "model": "composition-shuffle",
+          "label": "Composition shuffle",
+          "effort": null,
+          "folded": true,
+          "consensus": 8.27,
+          "esmfold2": 8.07,
+          "boltz2": 8.47,
+          "simplefold": 8.09,
+          "twin_delta": 1.09
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "control",
+          "model": "ca-proteinmpnn",
+          "label": "Cα-ProteinMPNN (4 draws, internal likelihood)",
+          "effort": null,
+          "folded": true,
+          "consensus": 92.1,
+          "esmfold2": 89.76,
+          "boltz2": 94.44,
+          "simplefold": 90.62,
+          "twin_delta": 79.75
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "control",
+          "model": "composition-shuffle",
+          "label": "Composition shuffle",
+          "effort": null,
+          "folded": true,
+          "consensus": 10.43,
+          "esmfold2": 10.22,
+          "boltz2": 10.63,
+          "simplefold": 7.65,
+          "twin_delta": -1.88
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-A",
+          "length": 80,
+          "family": "helical",
+          "kind": "control",
+          "model": "secondary-structure-rule",
+          "label": "Local secondary-structure rule",
+          "effort": null,
+          "folded": true,
+          "consensus": 21.17,
+          "esmfold2": 20.96,
+          "boltz2": 21.38,
+          "simplefold": 20.65,
+          "twin_delta": 5.73
+        },
+        {
+          "pair": "G3-P01",
+          "target": "G3-P01-B",
+          "length": 80,
+          "family": "helical",
+          "kind": "control",
+          "model": "secondary-structure-rule",
+          "label": "Local secondary-structure rule",
+          "effort": null,
+          "folded": true,
+          "consensus": 9.68,
+          "esmfold2": 9.74,
+          "boltz2": 9.63,
+          "simplefold": 26.68,
+          "twin_delta": 0.39
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-A",
+          "length": 112,
+          "family": "helical",
+          "kind": "control",
+          "model": "secondary-structure-rule",
+          "label": "Local secondary-structure rule",
+          "effort": null,
+          "folded": true,
+          "consensus": 10.2,
+          "esmfold2": 12.0,
+          "boltz2": 8.4,
+          "simplefold": 15.22,
+          "twin_delta": 2.06
+        },
+        {
+          "pair": "G3-P02",
+          "target": "G3-P02-B",
+          "length": 112,
+          "family": "helical",
+          "kind": "control",
+          "model": "secondary-structure-rule",
+          "label": "Local secondary-structure rule",
+          "effort": null,
+          "folded": true,
+          "consensus": 15.5,
+          "esmfold2": 15.07,
+          "boltz2": 15.92,
+          "simplefold": 20.45,
+          "twin_delta": -3.14
+        }
+      ]
+    }
+  },
+  "simplefold_3b": {
+    "matrix_456_cells": {
+      "summary": [
+        {
+          "cohort": "All 24 shapes (456-slot matrix)",
+          "note": "442 folded cells · 12 pairs · 14/14 model ρ = 0.987 / 0.969",
+          "cells": 442,
+          "pairs": 12,
+          "esmfold2_r": 0.921,
+          "esmfold2_rho": 0.919,
+          "boltz2_r": 0.914,
+          "boltz2_rho": 0.906
+        },
+        {
+          "cohort": "Stage 1 v4.2 (342-slot matrix)",
+          "note": "334 folded cells · 9 pairs · Included in 24-shape rank check",
+          "cells": 334,
+          "pairs": 9,
+          "esmfold2_r": 0.907,
+          "esmfold2_rho": 0.905,
+          "boltz2_r": 0.905,
+          "boltz2_rho": 0.896
+        },
+        {
+          "cohort": "Stage 2 v4.3 (114-slot matrix)",
+          "note": "108 folded cells · 3 pairs · Included in 24-shape rank check",
+          "cells": 108,
+          "pairs": 3,
+          "esmfold2_r": 0.961,
+          "esmfold2_rho": 0.932,
+          "boltz2_r": 0.935,
+          "boltz2_rho": 0.918
+        }
+      ],
+      "simplefold": {
+        "model": "simplefold_3B",
+        "settings": {
+          "num_steps": 500,
+          "samples_per_sequence": 1,
+          "seed": 0,
+          "tau": 0.01
+        }
+      }
+    },
+    "panel_128_inputs": {
+      "summary": [
+        {
+          "cohort": "Stage 1 v4.2 (Pure-Cα + Vectors)",
+          "cells": 70,
+          "pairs": 4,
+          "esmfold2_r": 0.864,
+          "esmfold2_rho": 0.851,
+          "boltz2_r": 0.946,
+          "boltz2_rho": 0.929
+        },
+        {
+          "cohort": "Stage 2 v4.3 (176 aa Pure-Cα + Vectors)",
+          "cells": 32,
+          "pairs": 2,
+          "esmfold2_r": 0.966,
+          "esmfold2_rho": 0.952,
+          "boltz2_r": 0.957,
+          "boltz2_rho": 0.924
+        },
+        {
+          "cohort": "Fresh Genie 3 v4.3 (80 and 112 aa Pure-Cα)",
+          "cells": 26,
+          "pairs": 2,
+          "esmfold2_r": 0.957,
+          "esmfold2_rho": 0.963,
+          "boltz2_r": 0.977,
+          "boltz2_rho": 0.957
+        }
+      ]
+    },
+    "panel_72_sequences": {
+      "unique_foldable_sequences": 72,
+      "scoring_profile": "spacefill-v4",
+      "summary_endpoints": {
+        "stage-one": {
+          "foldable_cells": 50,
+          "evaluated_cells": 46,
+          "twin_pair_clusters": 4,
+          "endpoints": {
+            "aligned_coverage": {
+              "esmfold2": {
+                "pearson": 0.8051,
+                "pearson_ci95": [
+                  0.3959,
+                  0.8511
+                ],
+                "spearman": 0.8058,
+                "spearman_ci95": [
+                  0.6325,
+                  0.9046
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.915,
+                "pearson_ci95": [
+                  0.4756,
+                  0.9826
+                ],
+                "spearman": 0.8661,
+                "spearman_ci95": [
+                  0.63,
+                  0.9677
+                ]
+              }
+            },
+            "ca_lddt": {
+              "esmfold2": {
+                "pearson": 0.8578,
+                "pearson_ci95": [
+                  0.7412,
+                  0.9087
+                ],
+                "spearman": 0.8246,
+                "spearman_ci95": [
+                  0.6892,
+                  0.9127
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9453,
+                "pearson_ci95": [
+                  0.8563,
+                  0.982
+                ],
+                "spearman": 0.9065,
+                "spearman_ci95": [
+                  0.7747,
+                  0.9411
+                ]
+              }
+            },
+            "contact_f1": {
+              "esmfold2": {
+                "pearson": 0.8729,
+                "pearson_ci95": [
+                  0.8167,
+                  0.947
+                ],
+                "spearman": 0.8632,
+                "spearman_ci95": [
+                  0.7609,
+                  0.913
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9417,
+                "pearson_ci95": [
+                  0.8334,
+                  0.9754
+                ],
+                "spearman": 0.9245,
+                "spearman_ci95": [
+                  0.811,
+                  0.9427
+                ]
+              }
+            },
+            "score": {
+              "esmfold2": {
+                "pearson": 0.8424,
+                "pearson_ci95": [
+                  0.7607,
+                  0.8942
+                ],
+                "spearman": 0.8337,
+                "spearman_ci95": [
+                  0.7579,
+                  0.8922
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9361,
+                "pearson_ci95": [
+                  0.7351,
+                  0.9836
+                ],
+                "spearman": 0.9128,
+                "spearman_ci95": [
+                  0.7528,
+                  0.9641
+                ]
+              }
+            },
+            "margin": {
+              "esmfold2": {
+                "pearson": 0.8069,
+                "pearson_ci95": [
+                  0.675,
+                  0.8658
+                ],
+                "spearman": 0.7648,
+                "spearman_ci95": [
+                  0.6632,
+                  0.8592
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9276,
+                "pearson_ci95": [
+                  0.7558,
+                  0.9726
+                ],
+                "spearman": 0.8816,
+                "spearman_ci95": [
+                  0.7155,
+                  0.9478
+                ]
+              }
+            }
+          }
+        },
+        "stage-two": {
+          "foldable_cells": 22,
+          "evaluated_cells": 6,
+          "twin_pair_clusters": 2,
+          "endpoints": {
+            "aligned_coverage": {
+              "esmfold2": {
+                "pearson": 0.9903,
+                "pearson_ci95": [
+                  0.9903,
+                  1.0
+                ],
+                "spearman": 1.0,
+                "spearman_ci95": [
+                  1.0,
+                  1.0
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.988,
+                "pearson_ci95": [
+                  0.988,
+                  1.0
+                ],
+                "spearman": 0.9856,
+                "spearman_ci95": [
+                  0.9856,
+                  1.0
+                ]
+              }
+            },
+            "ca_lddt": {
+              "esmfold2": {
+                "pearson": 0.9725,
+                "pearson_ci95": [
+                  0.9725,
+                  0.9924
+                ],
+                "spearman": 0.8286,
+                "spearman_ci95": [
+                  0.8286,
+                  1.0
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9906,
+                "pearson_ci95": [
+                  0.9906,
+                  0.9988
+                ],
+                "spearman": 0.9429,
+                "spearman_ci95": [
+                  0.5332,
+                  0.9957
+                ]
+              }
+            },
+            "contact_f1": {
+              "esmfold2": {
+                "pearson": 0.998,
+                "pearson_ci95": [
+                  0.998,
+                  0.9995
+                ],
+                "spearman": 0.9429,
+                "spearman_ci95": [
+                  0.5332,
+                  0.9957
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9969,
+                "pearson_ci95": [
+                  0.9969,
+                  0.9996
+                ],
+                "spearman": 0.8857,
+                "spearman_ci95": [
+                  0.5289,
+                  0.9914
+                ]
+              }
+            },
+            "score": {
+              "esmfold2": {
+                "pearson": 0.9941,
+                "pearson_ci95": [
+                  0.9941,
+                  0.9998
+                ],
+                "spearman": 0.9429,
+                "spearman_ci95": [
+                  0.9429,
+                  1.0
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9933,
+                "pearson_ci95": [
+                  0.9933,
+                  0.9994
+                ],
+                "spearman": 0.7714,
+                "spearman_ci95": [
+                  0.5204,
+                  0.9829
+                ]
+              }
+            },
+            "margin": {
+              "esmfold2": {
+                "pearson": 0.9951,
+                "pearson_ci95": [
+                  0.9951,
+                  0.9996
+                ],
+                "spearman": 0.8286,
+                "spearman_ci95": [
+                  0.5246,
+                  0.9871
+                ]
+              },
+              "boltz2": {
+                "pearson": 0.9919,
+                "pearson_ci95": [
+                  0.9919,
+                  0.9997
+                ],
+                "spearman": 0.8286,
+                "spearman_ci95": [
+                  0.5246,
+                  0.9871
+                ]
+              }
+            }
+          }
+        }
+      },
+      "cohorts": {
+        "stage-one": {
+          "structure_only": {
+            "all": {
+              "foldable_cells": 50,
+              "common_valid_sequences": 50,
+              "common_valid_sequences_per_pair": [
+                13,
+                13,
+                12,
+                12
+              ],
+              "endpoints": {
+                "aligned_coverage": {
+                  "cells": 50,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8662904482850553,
+                        "pair_bootstrap_percentiles": [
+                          0.8085583789168324,
+                          0.9052842496977754
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8420471214726941,
+                        "pair_bootstrap_percentiles": [
+                          0.7133783672648487,
+                          0.912800786882345
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9404346208426936,
+                        "pair_bootstrap_percentiles": [
+                          0.8367118893221487,
+                          0.9860582819913665
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8942741950862474,
+                        "pair_bootstrap_percentiles": [
+                          0.7129990100719372,
+                          0.9750118089362432
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "ca_lddt": {
+                  "cells": 50,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8867700331066708,
+                        "pair_bootstrap_percentiles": [
+                          0.8472245735742773,
+                          0.931150516522829
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.850776729578469,
+                        "pair_bootstrap_percentiles": [
+                          0.7563497822931784,
+                          0.9313767433900916
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.955417730794686,
+                        "pair_bootstrap_percentiles": [
+                          0.9026926171736761,
+                          0.9842657034780465
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.9238415366146459,
+                        "pair_bootstrap_percentiles": [
+                          0.8246153846153846,
+                          0.9481093547302167
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "contact_f1": {
+                  "cells": 50,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8880324456266431,
+                        "pair_bootstrap_percentiles": [
+                          0.8274989131983006,
+                          0.9552325311727634
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8787777691833486,
+                        "pair_bootstrap_percentiles": [
+                          0.7651373469808119,
+                          0.9316334388636947
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9484028837137704,
+                        "pair_bootstrap_percentiles": [
+                          0.8766304909016234,
+                          0.9765465155277958
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.936695245062404,
+                        "pair_bootstrap_percentiles": [
+                          0.8334316291944732,
+                          0.954304149444475
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "score": {
+                  "cells": 50,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8781748662241258,
+                        "pair_bootstrap_percentiles": [
+                          0.8389929848203653,
+                          0.9362915939707057
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8620888355342137,
+                        "pair_bootstrap_percentiles": [
+                          0.8115384615384615,
+                          0.9150943396226413
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.949788937738265,
+                        "pair_bootstrap_percentiles": [
+                          0.8654870615275736,
+                          0.9860795244854889
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.9295078031212485,
+                        "pair_bootstrap_percentiles": [
+                          0.8079991816693946,
+                          0.9697217675941082
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "margin": {
+                  "cells": 50,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8562089703523034,
+                        "pair_bootstrap_percentiles": [
+                          0.81339694352867,
+                          0.9255500489859397
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8115726290516206,
+                        "pair_bootstrap_percentiles": [
+                          0.7392594108019641,
+                          0.8893323657474599
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9450237678239148,
+                        "pair_bootstrap_percentiles": [
+                          0.8782924837159551,
+                          0.9774966219067748
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.9056902761104442,
+                        "pair_bootstrap_percentiles": [
+                          0.7797667757774143,
+                          0.9589811783960722
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "contestants": {
+              "foldable_cells": 38,
+              "common_valid_sequences": 38,
+              "common_valid_sequences_per_pair": [
+                10,
+                10,
+                9,
+                9
+              ],
+              "endpoints": {
+                "aligned_coverage": {
+                  "cells": 38,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8780089043485041,
+                        "pair_bootstrap_percentiles": [
+                          0.27973402153499294,
+                          0.9694268286010714
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.7972418334052838,
+                        "pair_bootstrap_percentiles": [
+                          0.42863420910082567,
+                          0.9806851892035119
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.8975149487719456,
+                        "pair_bootstrap_percentiles": [
+                          0.43708103948515403,
+                          0.9782933288181295
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8381234233055733,
+                        "pair_bootstrap_percentiles": [
+                          0.6000477084732361,
+                          0.9732339681975261
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "ca_lddt": {
+                  "cells": 38,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9298371360993855,
+                        "pair_bootstrap_percentiles": [
+                          0.7367546538194872,
+                          0.9754518639315894
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8503583751853735,
+                        "pair_bootstrap_percentiles": [
+                          0.5929824561403507,
+                          0.9530496748985693
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9302088905449662,
+                        "pair_bootstrap_percentiles": [
+                          0.8161596647715933,
+                          0.9804554054701767
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8588467009519639,
+                        "pair_bootstrap_percentiles": [
+                          0.6736842105263157,
+                          0.9152723389106445
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "contact_f1": {
+                  "cells": 38,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9361136296062225,
+                        "pair_bootstrap_percentiles": [
+                          0.8138684050644768,
+                          0.9836828917731539
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.915458277704336,
+                        "pair_bootstrap_percentiles": [
+                          0.7445238095238097,
+                          0.9574375647461686
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9334394509635557,
+                        "pair_bootstrap_percentiles": [
+                          0.8061249612653297,
+                          0.9829472012831314
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.9271135444796512,
+                        "pair_bootstrap_percentiles": [
+                          0.798809523809524,
+                          0.9425910723537302
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "score": {
+                  "cells": 38,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9159879889376543,
+                        "pair_bootstrap_percentiles": [
+                          0.6666516419742813,
+                          0.9769600231303278
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8557829084144872,
+                        "pair_bootstrap_percentiles": [
+                          0.5865853658536585,
+                          0.9767261442979053
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9200599566896617,
+                        "pair_bootstrap_percentiles": [
+                          0.6888995029197803,
+                          0.9830144847093923
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8857643068169382,
+                        "pair_bootstrap_percentiles": [
+                          0.6700000000000002,
+                          0.9731057667442461
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "margin": {
+                  "cells": 38,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8909263753882858,
+                        "pair_bootstrap_percentiles": [
+                          0.5979780567800291,
+                          0.9703375899183374
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.822518875150454,
+                        "pair_bootstrap_percentiles": [
+                          0.48714285714285727,
+                          0.9754385964912279
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.911667388764953,
+                        "pair_bootstrap_percentiles": [
+                          0.7045732445776548,
+                          0.9737014732190382
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8827005142794615,
+                        "pair_bootstrap_percentiles": [
+                          0.6438095238095239,
+                          0.9502380952380954
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "controls": {
+              "foldable_cells": 12,
+              "common_valid_sequences": 12,
+              "common_valid_sequences_per_pair": [
+                3,
+                3,
+                3,
+                3
+              ],
+              "endpoints": {
+                "aligned_coverage": {
+                  "cells": 12,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8627414484228254,
+                        "pair_bootstrap_percentiles": [
+                          0.6789596443335658,
+                          0.9992286678439377
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.6912280701754384,
+                        "pair_bootstrap_percentiles": [
+                          0.6761072536734016,
+                          0.9004241776792913
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9922673060213537,
+                        "pair_bootstrap_percentiles": [
+                          0.986013877603186,
+                          0.9995545091191949
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.9349750818903511,
+                        "pair_bootstrap_percentiles": [
+                          0.8467153284671532,
+                          1.0
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "ca_lddt": {
+                  "cells": 12,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8375260222526913,
+                        "pair_bootstrap_percentiles": [
+                          0.6760640193856656,
+                          0.9973650522954087
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.7622377622377622,
+                        "pair_bootstrap_percentiles": [
+                          0.5428571428571428,
+                          0.9562043795620438
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9971323625089654,
+                        "pair_bootstrap_percentiles": [
+                          0.9957445218944857,
+                          0.999408375659109
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.972027972027972,
+                        "pair_bootstrap_percentiles": [
+                          0.9428571428571428,
+                          1.0
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "contact_f1": {
+                  "cells": 12,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8005051892587304,
+                        "pair_bootstrap_percentiles": [
+                          0.5068449519244036,
+                          0.9962897506516165
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.7054772470281419,
+                        "pair_bootstrap_percentiles": [
+                          -0.014598540145985401,
+                          1.0
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9780454620542708,
+                        "pair_bootstrap_percentiles": [
+                          0.9689907923143228,
+                          0.9940730019894038
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8606822413743331,
+                        "pair_bootstrap_percentiles": [
+                          0.6423357664233577,
+                          0.9927007299270073
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "score": {
+                  "cells": 12,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8402267215413888,
+                        "pair_bootstrap_percentiles": [
+                          0.6161041249526318,
+                          0.997426398304215
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.7342657342657343,
+                        "pair_bootstrap_percentiles": [
+                          0.45255474452554745,
+                          0.9562043795620438
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.992949827092993,
+                        "pair_bootstrap_percentiles": [
+                          0.9912476230678344,
+                          0.9988886112592733
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8531468531468531,
+                        "pair_bootstrap_percentiles": [
+                          0.8233215547703182,
+                          0.9562043795620438
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                },
+                "margin": {
+                  "cells": 12,
+                  "twin_pair_clusters": 4,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8243766219831227,
+                        "pair_bootstrap_percentiles": [
+                          0.572741426058287,
+                          0.9970542650726126
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.5384615384615384,
+                        "pair_bootstrap_percentiles": [
+                          0.37142857142857144,
+                          1.0
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9912763153908156,
+                        "pair_bootstrap_percentiles": [
+                          0.9871219424590378,
+                          0.997712579497429
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      },
+                      "spearman": {
+                        "estimate": 0.8111888111888111,
+                        "pair_bootstrap_percentiles": [
+                          0.4857142857142857,
+                          1.0
+                        ],
+                        "defined_resamples": 256,
+                        "total_resamples": 256
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "stage-two": {
+          "structure_only": {
+            "all": {
+              "foldable_cells": 22,
+              "common_valid_sequences": 22,
+              "common_valid_sequences_per_pair": [
+                11,
+                11
+              ],
+              "endpoints": {
+                "aligned_coverage": {
+                  "cells": 22,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9760069189538508,
+                        "pair_bootstrap_percentiles": [
+                          0.9760069189538509,
+                          0.9836707400918057
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9103005265052774,
+                        "pair_bootstrap_percentiles": [
+                          0.8581127221362976,
+                          0.9344089031242595
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9656774271890483,
+                        "pair_bootstrap_percentiles": [
+                          0.9656774271890483,
+                          0.983894601224123
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8591669372993823,
+                        "pair_bootstrap_percentiles": [
+                          0.8179864040164609,
+                          0.9451915137780189
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "ca_lddt": {
+                  "cells": 22,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9614956455659591,
+                        "pair_bootstrap_percentiles": [
+                          0.9501153865754663,
+                          0.9725892828908344
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.919819311123659,
+                        "pair_bootstrap_percentiles": [
+                          0.8846682665160926,
+                          0.9687591756070018
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9679383915208843,
+                        "pair_bootstrap_percentiles": [
+                          0.9679383915208843,
+                          0.9868307942563829
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9457933370976849,
+                        "pair_bootstrap_percentiles": [
+                          0.93707086391869,
+                          0.9622981366459628
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "contact_f1": {
+                  "cells": 22,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9389357248165955,
+                        "pair_bootstrap_percentiles": [
+                          0.9083012185418086,
+                          0.9782080739433212
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9028797289666854,
+                        "pair_bootstrap_percentiles": [
+                          0.8918068887634105,
+                          0.9254432523997741
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9739278345677921,
+                        "pair_bootstrap_percentiles": [
+                          0.9739278345677921,
+                          0.9881389197176179
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.948051948051948,
+                        "pair_bootstrap_percentiles": [
+                          0.8783766233766234,
+                          0.9540584415584416
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "score": {
+                  "cells": 22,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9671650474188708,
+                        "pair_bootstrap_percentiles": [
+                          0.9588058075547098,
+                          0.9778829422211235
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9457933370976849,
+                        "pair_bootstrap_percentiles": [
+                          0.9188636363636364,
+                          0.9457933370976849
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9737750189088842,
+                        "pair_bootstrap_percentiles": [
+                          0.9737750189088842,
+                          0.9933725910953997
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9322416713721061,
+                        "pair_bootstrap_percentiles": [
+                          0.902418125352908,
+                          0.9444635798983625
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "margin": {
+                  "cells": 22,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9658426863920763,
+                        "pair_bootstrap_percentiles": [
+                          0.9630873667211349,
+                          0.971667270455081
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9424054206662902,
+                        "pair_bootstrap_percentiles": [
+                          0.9031804065499718,
+                          0.9620440429136081
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9709069848545165,
+                        "pair_bootstrap_percentiles": [
+                          0.9709069848545168,
+                          0.9897754486159245
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9536984754376059,
+                        "pair_bootstrap_percentiles": [
+                          0.9292546583850931,
+                          0.9544819311123659
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "contestants": {
+              "foldable_cells": 16,
+              "common_valid_sequences": 16,
+              "common_valid_sequences_per_pair": [
+                8,
+                8
+              ],
+              "endpoints": {
+                "aligned_coverage": {
+                  "cells": 16,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8510501659629365,
+                        "pair_bootstrap_percentiles": [
+                          0.8395041323473198,
+                          0.8862742755527606
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8716814159292037,
+                        "pair_bootstrap_percentiles": [
+                          0.8268849616661376,
+                          0.8716814159292037
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.7677516861190836,
+                        "pair_bootstrap_percentiles": [
+                          0.7677516861190836,
+                          0.8615394564631097
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8248357304947967,
+                        "pair_bootstrap_percentiles": [
+                          0.8248357304947967,
+                          0.9037770855185352
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "ca_lddt": {
+                  "cells": 16,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9315950519875503,
+                        "pair_bootstrap_percentiles": [
+                          0.929144756453075,
+                          0.9631076015606781
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8852941176470588,
+                        "pair_bootstrap_percentiles": [
+                          0.7271113445378151,
+                          0.9913970588235294
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9164298673250213,
+                        "pair_bootstrap_percentiles": [
+                          0.9164298673250213,
+                          0.969617480829505
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8823529411764706,
+                        "pair_bootstrap_percentiles": [
+                          0.8823529411764706,
+                          0.9047619047619048
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "contact_f1": {
+                  "cells": 16,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8425631981112266,
+                        "pair_bootstrap_percentiles": [
+                          0.8058664634639037,
+                          0.9615680016352907
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.7941176470588235,
+                        "pair_bootstrap_percentiles": [
+                          0.7643207282913165,
+                          0.8744397759103641
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.946891629688911,
+                        "pair_bootstrap_percentiles": [
+                          0.935849717767638,
+                          0.9523470494730475
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9058823529411765,
+                        "pair_bootstrap_percentiles": [
+                          0.8148809523809524,
+                          0.9058823529411765
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "score": {
+                  "cells": 16,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8681097823434591,
+                        "pair_bootstrap_percentiles": [
+                          0.8636733719680497,
+                          0.9534638230337548
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9,
+                        "pair_bootstrap_percentiles": [
+                          0.8163095238095238,
+                          0.9264285714285715
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9121862154465687,
+                        "pair_bootstrap_percentiles": [
+                          0.9121862154465687,
+                          0.9639589187635288
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8852941176470588,
+                        "pair_bootstrap_percentiles": [
+                          0.8809523809523809,
+                          0.8852941176470588
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "margin": {
+                  "cells": 16,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.8461927057393167,
+                        "pair_bootstrap_percentiles": [
+                          0.8461927057393167,
+                          0.9318073187638719
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8911764705882353,
+                        "pair_bootstrap_percentiles": [
+                          0.7716001400560224,
+                          0.9698144257703081
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.8942486772793571,
+                        "pair_bootstrap_percentiles": [
+                          0.8942486772793569,
+                          0.9445652473659599
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9117647058823529,
+                        "pair_bootstrap_percentiles": [
+                          0.9052871148459384,
+                          0.9273109243697479
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "controls": {
+              "foldable_cells": 6,
+              "common_valid_sequences": 6,
+              "common_valid_sequences_per_pair": [
+                3,
+                3
+              ],
+              "endpoints": {
+                "aligned_coverage": {
+                  "cells": 6,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9903336018890028,
+                        "pair_bootstrap_percentiles": [
+                          0.9903336018890028,
+                          0.9999830034499982
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 1.0,
+                        "pair_bootstrap_percentiles": [
+                          1.0,
+                          1.0
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.987993125393236,
+                        "pair_bootstrap_percentiles": [
+                          0.987993125393236,
+                          0.9999896587928736
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9856107606091623,
+                        "pair_bootstrap_percentiles": [
+                          0.9856107606091623,
+                          1.0
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "ca_lddt": {
+                  "cells": 6,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9724972919602292,
+                        "pair_bootstrap_percentiles": [
+                          0.9724972919602292,
+                          0.9924349997385965
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8285714285714286,
+                        "pair_bootstrap_percentiles": [
+                          0.8285714285714286,
+                          1.0
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9906245162892493,
+                        "pair_bootstrap_percentiles": [
+                          0.9906245162892493,
+                          0.9988205710585152
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9428571428571428,
+                        "pair_bootstrap_percentiles": [
+                          0.5332142857142858,
+                          0.9957142857142857
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "contact_f1": {
+                  "cells": 6,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9980073521386391,
+                        "pair_bootstrap_percentiles": [
+                          0.998007352138639,
+                          0.9995000085910823
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9428571428571428,
+                        "pair_bootstrap_percentiles": [
+                          0.5332142857142858,
+                          0.9957142857142857
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9968605016894496,
+                        "pair_bootstrap_percentiles": [
+                          0.9968605016894496,
+                          0.9995510199669865
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8857142857142857,
+                        "pair_bootstrap_percentiles": [
+                          0.5289285714285714,
+                          0.9914285714285714
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "score": {
+                  "cells": 6,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9940919513477576,
+                        "pair_bootstrap_percentiles": [
+                          0.9940919513477576,
+                          0.9998440267179752
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.9428571428571428,
+                        "pair_bootstrap_percentiles": [
+                          0.9428571428571428,
+                          1.0
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9932672568844642,
+                        "pair_bootstrap_percentiles": [
+                          0.9932672568844639,
+                          0.99944000873293
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.7714285714285715,
+                        "pair_bootstrap_percentiles": [
+                          0.5203571428571429,
+                          0.9828571428571429
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                },
+                "margin": {
+                  "cells": 6,
+                  "twin_pair_clusters": 2,
+                  "comparisons": {
+                    "esmfold2": {
+                      "pearson": {
+                        "estimate": 0.9951191059273623,
+                        "pair_bootstrap_percentiles": [
+                          0.9951191059273623,
+                          0.9996106742458803
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8285714285714286,
+                        "pair_bootstrap_percentiles": [
+                          0.5246428571428572,
+                          0.9871428571428571
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    },
+                    "boltz2": {
+                      "pearson": {
+                        "estimate": 0.9918747105536667,
+                        "pair_bootstrap_percentiles": [
+                          0.9918747105536667,
+                          0.9997219942481651
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      },
+                      "spearman": {
+                        "estimate": 0.8285714285714286,
+                        "pair_bootstrap_percentiles": [
+                          0.5246428571428572,
+                          0.9871428571428571
+                        ],
+                        "defined_resamples": 4,
+                        "total_resamples": 4
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "pdb100_novelty": {
+    "stage1_144_targets": {
+      "snapshot": "PDB100 2025-01-01",
+      "ranked_target_fingerprint": "3ce44463bc3a4fd08ecdd3f2d44bffe4398797cb4d83ed47ab87407b0b01591c",
+      "returned_alignments_sha256": "020aa17d691eec80069e8cecba2a8d3c70011d11d2b0314af783d747773cf3fc",
+      "denominator_targets": 144,
+      "both_coverages_at_least": 0.85,
+      "thresholds": [
+        {
+          "both_normalized_tm_at_least": 0.7,
+          "matched_targets": 37,
+          "alignments": 440,
+          "distinct_pairs_with_match": 30,
+          "by_class": {
+            "beta": 12,
+            "helical": 14,
+            "mixed": 11
+          },
+          "case_ids": [
+            "release-l112-03-a",
+            "release-l112-06-a",
+            "release-l112-17-a",
+            "release-l112-21-b",
+            "release-l112-22-a",
+            "release-l112-24-b",
+            "release-l48-02-a",
+            "release-l48-03-b",
+            "release-l48-04-a",
+            "release-l48-04-b",
+            "release-l48-06-a",
+            "release-l48-06-b",
+            "release-l48-08-b",
+            "release-l48-14-a",
+            "release-l48-16-a",
+            "release-l48-18-b",
+            "release-l48-19-a",
+            "release-l48-20-a",
+            "release-l48-23-a",
+            "release-l48-23-b",
+            "release-l80-01-b",
+            "release-l80-05-b",
+            "release-l80-08-b",
+            "release-l80-09-a",
+            "release-l80-09-b",
+            "release-l80-10-b",
+            "release-l80-11-a",
+            "release-l80-11-b",
+            "release-l80-12-a",
+            "release-l80-12-b",
+            "release-l80-13-a",
+            "release-l80-14-a",
+            "release-l80-17-a",
+            "release-l80-18-a",
+            "release-l80-18-b",
+            "release-l80-19-b",
+            "release-l80-20-a"
+          ]
+        },
+        {
+          "both_normalized_tm_at_least": 0.85,
+          "matched_targets": 3,
+          "alignments": 6,
+          "distinct_pairs_with_match": 3,
+          "by_class": {
+            "helical": 3
+          },
+          "case_ids": [
+            "release-l48-23-a",
+            "release-l80-17-a",
+            "release-l80-20-a"
+          ]
+        }
+      ]
+    },
+    "stage2_6_targets": {
+      "schema": "trace2fold-stage-two-pdb100-result-v1",
+      "claim_scope": "PDB100 snapshot familiarity screen of the six frozen Stage 2 targets",
+      "classification": {
+        "full_chain": "both TM scores >= 0.85 and both aligned coverages >= 0.85",
+        "note": "Foldseek is a bounded prefilter; US-align is run on every returned length-compatible hit.",
+        "partial_or_subdomain_signal": "not full-chain and max(TM score) >= 0.85"
+      },
+      "database": {
+        "archive_md5": "aefd75e0a5d6acbe8a2b7791b53eb479",
+        "archive_sha256": "2ec2b8b83c5f9ccadc1d88d680cd3a40c04e2bcb4d67ba366cebbf6e8156b090",
+        "builder_foldseek_commit": "1815f0d76d7b5807e63b13f9d446dcef43c1f3b1",
+        "indexed_chains": 324204,
+        "name": "PDB100",
+        "snapshot_date": "2025-01-01"
+      },
+      "summary": {
+        "foldseek_returned_hits": 3748,
+        "length_compatible_hits_aligned": 693,
+        "queries": 6,
+        "queries_with_full_chain_match": 0,
+        "queries_with_partial_or_subdomain_signal": 0
+      },
+      "queries": [
+        {
+          "alias": "q0001",
+          "best_full_chain_match": null,
+          "best_partial_or_subdomain_signal": null,
+          "best_returned_hit": {
+            "aligned_residues": 131,
+            "coverages": [
+              0.7443181818181818,
+              0.7844311377245509
+            ],
+            "full_chain": false,
+            "partial_or_subdomain_signal": false,
+            "target": "8gji-assembly1_A",
+            "target_length": 167,
+            "tm_scores": [
+              0.6778,
+              0.712
+            ]
+          },
+          "case": "stage2-l176-01-a",
+          "family": "helical",
+          "full_chain_match_count": 0,
+          "length": 176,
+          "length_compatible_hits": 90,
+          "partial_or_subdomain_signal_count": 0,
+          "query_sha256": "45f8e9fa9e06adf452fd4c217dcd0245418624fdc80db4d243621555c7e397e8",
+          "target_sha256": "b81e4d52a1e2aed5a438153aaa29f70420818547172e5ca68fbdcdf85b2ab475"
+        },
+        {
+          "alias": "q0002",
+          "best_full_chain_match": null,
+          "best_partial_or_subdomain_signal": null,
+          "best_returned_hit": {
+            "aligned_residues": 114,
+            "coverages": [
+              0.6477272727272727,
+              0.75
+            ],
+            "full_chain": false,
+            "partial_or_subdomain_signal": false,
+            "target": "5tpm-assembly2_C",
+            "target_length": 152,
+            "tm_scores": [
+              0.4262,
+              0.4748
+            ]
+          },
+          "case": "stage2-l176-01-b",
+          "family": "helical",
+          "full_chain_match_count": 0,
+          "length": 176,
+          "length_compatible_hits": 136,
+          "partial_or_subdomain_signal_count": 0,
+          "query_sha256": "d434a8fd43bbc13617fc84e680646156056341da6033e6efce84215dd2b9da3c",
+          "target_sha256": "891e209860e8291a7e5b4d03311fd60fd539871ea9fafb9d919d441af41861dc"
+        },
+        {
+          "alias": "q0003",
+          "best_full_chain_match": null,
+          "best_partial_or_subdomain_signal": null,
+          "best_returned_hit": {
+            "aligned_residues": 106,
+            "coverages": [
+              0.6022727272727273,
+              0.6198830409356725
+            ],
+            "full_chain": false,
+            "partial_or_subdomain_signal": false,
+            "target": "4pr7-assembly1_A",
+            "target_length": 171,
+            "tm_scores": [
+              0.3854,
+              0.3936
+            ]
+          },
+          "case": "stage2-l176-02-a",
+          "family": "beta",
+          "full_chain_match_count": 0,
+          "length": 176,
+          "length_compatible_hits": 72,
+          "partial_or_subdomain_signal_count": 0,
+          "query_sha256": "3c9e7cfb75cb2ec7afbdfe6e4426d0477103709603131b0f074c67958fb6cabc",
+          "target_sha256": "689d2cf876288034636d9663dceba40df5b91913cfd14099f1937c491a7db369"
+        },
+        {
+          "alias": "q0004",
+          "best_full_chain_match": null,
+          "best_partial_or_subdomain_signal": null,
+          "best_returned_hit": {
+            "aligned_residues": 125,
+            "coverages": [
+              0.7102272727272727,
+              0.8169934640522876
+            ],
+            "full_chain": false,
+            "partial_or_subdomain_signal": false,
+            "target": "4ymy-assembly1_A-2",
+            "target_length": 153,
+            "tm_scores": [
+              0.5041,
+              0.5609
+            ]
+          },
+          "case": "stage2-l176-02-b",
+          "family": "beta",
+          "full_chain_match_count": 0,
+          "length": 176,
+          "length_compatible_hits": 120,
+          "partial_or_subdomain_signal_count": 0,
+          "query_sha256": "23a6fc7216c0bde200e25d83ce224a6e8b614c5dc521923757eaada5a3302b6e",
+          "target_sha256": "16d3dff5608078518abd4669b3dce33390d1c33f4269a0324e9f0f040da81c0a"
+        },
+        {
+          "alias": "q0005",
+          "best_full_chain_match": null,
+          "best_partial_or_subdomain_signal": null,
+          "best_returned_hit": {
+            "aligned_residues": 101,
+            "coverages": [
+              0.5738636363636364,
+              0.554945054945055
+            ],
+            "full_chain": false,
+            "partial_or_subdomain_signal": false,
+            "target": "7dcn-assembly1_A",
+            "target_length": 182,
+            "tm_scores": [
+              0.4335,
+              0.4218
+            ]
+          },
+          "case": "stage2-l176-03-a",
+          "family": "mixed",
+          "full_chain_match_count": 0,
+          "length": 176,
+          "length_compatible_hits": 150,
+          "partial_or_subdomain_signal_count": 0,
+          "query_sha256": "3ee5d00fe5fd4ec3bc074113abcc88d979f74a840ea834eb3e03be713bdc5f0d",
+          "target_sha256": "d59ee2a91dd824db5208dab39dc13f5405c1df73014b3f10a6af47bdf92fe06e"
+        },
+        {
+          "alias": "q0006",
+          "best_full_chain_match": null,
+          "best_partial_or_subdomain_signal": null,
+          "best_returned_hit": {
+            "aligned_residues": 136,
+            "coverages": [
+              0.7727272727272727,
+              0.7640449438202247
+            ],
+            "full_chain": false,
+            "partial_or_subdomain_signal": false,
+            "target": "2q3f-assembly2_B",
+            "target_length": 178,
+            "tm_scores": [
+              0.5612,
+              0.5562
+            ]
+          },
+          "case": "stage2-l176-03-b",
+          "family": "mixed",
+          "full_chain_match_count": 0,
+          "length": 176,
+          "length_compatible_hits": 125,
+          "partial_or_subdomain_signal_count": 0,
+          "query_sha256": "1823fc339b385af5e9ece47fad59319b95363cd622fce4af9ac6b0beb6254f5c",
+          "target_sha256": "aad0d62aa3d8833f69a8909dd18721fcceddc5b82be678029c06300e5e4ac2a0"
+        }
+      ]
+    }
+  },
+  "cpu_diagnostics": {
+    "scope": "locked-valid-contestant-replies",
+    "methods": {
+      "entropy": "Shannon entropy of residue frequencies, normalized by log2(20)",
+      "repeat": "longest homopolymer and maximum overlapping 2/3/4-mer multiplicity",
+      "beta_branched": "I/V/T frequency on frozen P-SEA E positions minus non-E positions",
+      "contact_separation": "target-contact recall and precision at C-alpha <8 A in |i-j| bins 6-11, 12-23, 24-47, and >=48; decay is longest-bin recall minus shortest-bin recall"
+    },
+    "counts": {
+      "stage-one": 242,
+      "stage-two": 76,
+      "total": 318
+    },
+    "overall_summary": {
+      "stage1_valid_n": 242,
+      "stage2_valid_n": 76,
+      "metrics": {
+        "normalized_sequence_entropy": {
+          "stage1": 0.7812,
+          "stage2": 0.7842
+        },
+        "effective_alphabet_size": {
+          "stage1": 10.66,
+          "stage2": 10.8
+        },
+        "longest_homopolymer": {
+          "stage1": 1.81,
+          "stage2": 2.08
+        },
+        "max_single_residue_fraction": {
+          "stage1": 0.1906,
+          "stage2": 0.1971
+        },
+        "ivt_fraction_on_beta": {
+          "stage1": 0.4765,
+          "stage2": 0.5151
+        },
+        "ivt_beta_minus_nonbeta": {
+          "stage1": 0.2614,
+          "stage2": 0.2653
+        },
+        "esmfold2_long_minus_short_contact_recall": {
+          "stage1": -0.2814,
+          "stage2": -0.3003
+        },
+        "boltz2_long_minus_short_contact_recall": {
+          "stage1": -0.2515,
+          "stage2": -0.2357
+        }
+      },
+      "result_sha256": "55a324694bacc39a491d04b3190bbe8501121a0a413bca13b09437197e12b92a"
+    },
+    "summaries": [
+      {
+        "stage": "stage-one",
+        "profile": "all",
+        "n": 242,
+        "means": {
+          "beta_branched_fraction_beta": 0.47647729010953693,
+          "beta_branched_fraction_nonbeta": 0.17918508689022977,
+          "beta_enrichment": 0.2613837936362604,
+          "beta_positions": 19.024793388429753,
+          "boltz2_long_minus_short_recall": -0.2514624396339906,
+          "effective_alphabet": 10.65778847938281,
+          "esmfold2_long_minus_short_recall": -0.28138798605103554,
+          "longest_homopolymer": 1.8057851239669422,
+          "maximum_residue_fraction": 0.19057949626131443,
+          "normalized_shannon": 0.7811526287612524,
+          "shannon_bits": 3.3760854926383743,
+          "unique_residues": 13.925619834710744
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "claude-fable-5-2:high",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.5946793380222114,
+          "beta_branched_fraction_nonbeta": 0.1426389909448226,
+          "beta_enrichment": 0.4230819627160885,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.3440077685341122,
+          "effective_alphabet": 9.774171519725327,
+          "esmfold2_long_minus_short_recall": -0.37951431343797326,
+          "longest_homopolymer": 1.8888888888888888,
+          "maximum_residue_fraction": 0.20763888888888887,
+          "normalized_shannon": 0.7571058576064209,
+          "shannon_bits": 3.2721570767929813,
+          "unique_residues": 13.333333333333334
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "claude-opus-5-5:high",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.5559109158170896,
+          "beta_branched_fraction_nonbeta": 0.14672689692250948,
+          "beta_enrichment": 0.3722789037666587,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.2593898504267038,
+          "effective_alphabet": 9.891104081352763,
+          "esmfold2_long_minus_short_recall": -0.3001198825417848,
+          "longest_homopolymer": 1.7777777777777777,
+          "maximum_residue_fraction": 0.20132275132275132,
+          "normalized_shannon": 0.7609184531135847,
+          "shannon_bits": 3.2886348404298342,
+          "unique_residues": 13.61111111111111
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "claude-sonnet-5-5:high",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.3294838119992798,
+          "beta_branched_fraction_nonbeta": 0.20806269090386978,
+          "beta_enrichment": 0.0753758867545862,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.005820421522211165,
+          "effective_alphabet": 11.014457254026093,
+          "esmfold2_long_minus_short_recall": -0.06834862293644155,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.18931878306878308,
+          "normalized_shannon": 0.7974107126246184,
+          "shannon_bits": 3.446351762056491,
+          "unique_residues": 14.944444444444445
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "claude-sonnet-5-5:xhigh",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.5109463456234588,
+          "beta_branched_fraction_nonbeta": 0.16580315815023494,
+          "beta_enrichment": 0.29532692585842385,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.20038785666457215,
+          "effective_alphabet": 10.437699980088075,
+          "esmfold2_long_minus_short_recall": -0.2526917897137465,
+          "longest_homopolymer": 1.7222222222222223,
+          "maximum_residue_fraction": 0.19662698412698412,
+          "normalized_shannon": 0.7787336321678584,
+          "shannon_bits": 3.365630763299949,
+          "unique_residues": 14.38888888888889
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "deepseek/deepseek-v4.1-flash-1017:max",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.3766757824305899,
+          "beta_branched_fraction_nonbeta": 0.16162898429576683,
+          "beta_enrichment": 0.18095849646313014,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.1440870025648517,
+          "effective_alphabet": 11.111947622848852,
+          "esmfold2_long_minus_short_recall": -0.11120820554550982,
+          "longest_homopolymer": 1.4444444444444444,
+          "maximum_residue_fraction": 0.16312830687830687,
+          "normalized_shannon": 0.7972216492860977,
+          "shannon_bits": 3.4455346439020254,
+          "unique_residues": 13.444444444444445
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gemini-4-carbon-high:high",
+        "n": 17,
+        "means": {
+          "beta_branched_fraction_beta": 0.43898715300665286,
+          "beta_branched_fraction_nonbeta": 0.20990624704842167,
+          "beta_enrichment": 0.1986233859231613,
+          "beta_positions": 19.352941176470587,
+          "boltz2_long_minus_short_recall": -0.17651451882346222,
+          "effective_alphabet": 11.697944610141612,
+          "esmfold2_long_minus_short_recall": -0.1911940165388921,
+          "longest_homopolymer": 1.8235294117647058,
+          "maximum_residue_fraction": 0.1735294117647059,
+          "normalized_shannon": 0.817602654538438,
+          "shannon_bits": 3.533619883104162,
+          "unique_residues": 14.882352941176471
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gemini-4-hydrogen-high:high",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.41569804069925415,
+          "beta_branched_fraction_nonbeta": 0.19175620925132109,
+          "beta_enrichment": 0.21566293317147892,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.33181553091414556,
+          "effective_alphabet": 11.064039282539287,
+          "esmfold2_long_minus_short_recall": -0.3853774545941928,
+          "longest_homopolymer": 1.7777777777777777,
+          "maximum_residue_fraction": 0.17817460317460318,
+          "normalized_shannon": 0.8012306475665091,
+          "shannon_bits": 3.4628612462024906,
+          "unique_residues": 14.5
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gemini-4-hydrogen-xhigh:xhigh",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.40283138477059205,
+          "beta_branched_fraction_nonbeta": 0.18359218930969037,
+          "beta_enrichment": 0.20398079921875492,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.2972742179502087,
+          "effective_alphabet": 11.9274541207084,
+          "esmfold2_long_minus_short_recall": -0.34677664596113217,
+          "longest_homopolymer": 1.8333333333333333,
+          "maximum_residue_fraction": 0.16283068783068783,
+          "normalized_shannon": 0.8256181512565511,
+          "shannon_bits": 3.568262283564652,
+          "unique_residues": 14.88888888888889
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gemini-4-neon-high:high",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.36023810045993115,
+          "beta_branched_fraction_nonbeta": 0.19491895202452617,
+          "beta_enrichment": 0.13368308512155458,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.4259654703904461,
+          "effective_alphabet": 12.25737550929099,
+          "esmfold2_long_minus_short_recall": -0.39764282322270983,
+          "longest_homopolymer": 1.6111111111111112,
+          "maximum_residue_fraction": 0.16626984126984126,
+          "normalized_shannon": 0.8339109717514979,
+          "shannon_bits": 3.604103257447621,
+          "unique_residues": 15.5
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gpt-6.1-terra:xhigh",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.5855057150561297,
+          "beta_branched_fraction_nonbeta": 0.1521598390679115,
+          "beta_enrichment": 0.3624742897875957,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.2514788173566388,
+          "effective_alphabet": 6.521681977052561,
+          "esmfold2_long_minus_short_recall": -0.2669687050929271,
+          "longest_homopolymer": 2.111111111111111,
+          "maximum_residue_fraction": 0.2847222222222222,
+          "normalized_shannon": 0.6134989579200508,
+          "shannon_bits": 2.6514983824187874,
+          "unique_residues": 9.166666666666666
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gpt-6.2-astra:high",
+        "n": 17,
+        "means": {
+          "beta_branched_fraction_beta": 0.6326158531511834,
+          "beta_branched_fraction_nonbeta": 0.2173043426127443,
+          "beta_enrichment": 0.36885979119122786,
+          "beta_positions": 19.352941176470587,
+          "boltz2_long_minus_short_recall": -0.34139743094019215,
+          "effective_alphabet": 9.785290533158545,
+          "esmfold2_long_minus_short_recall": -0.35573431019006413,
+          "longest_homopolymer": 1.8823529411764706,
+          "maximum_residue_fraction": 0.20115546218487396,
+          "normalized_shannon": 0.7557851037720563,
+          "shannon_bits": 3.266448873689811,
+          "unique_residues": 13.058823529411764
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gpt-6.2-sol:high",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.5114466849718374,
+          "beta_branched_fraction_nonbeta": 0.17201209293294087,
+          "beta_enrichment": 0.3095793392232197,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.2549356025425435,
+          "effective_alphabet": 11.641994680791324,
+          "esmfold2_long_minus_short_recall": -0.35735256594098913,
+          "longest_homopolymer": 1.8888888888888888,
+          "maximum_residue_fraction": 0.18042328042328043,
+          "normalized_shannon": 0.8144436619904062,
+          "shannon_bits": 3.519966944459283,
+          "unique_residues": 14.833333333333334
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "gpt-6.2-sol:xhigh",
+        "n": 18,
+        "means": {
+          "beta_branched_fraction_beta": 0.45930711141776226,
+          "beta_branched_fraction_nonbeta": 0.18388971211723112,
+          "beta_enrichment": 0.24557571784509014,
+          "beta_positions": 19.0,
+          "boltz2_long_minus_short_recall": -0.2842481292845326,
+          "effective_alphabet": 12.162871011620643,
+          "esmfold2_long_minus_short_recall": -0.31348454999213343,
+          "longest_homopolymer": 1.6666666666666667,
+          "maximum_residue_fraction": 0.16001984126984128,
+          "normalized_shannon": 0.830810270575239,
+          "shannon_bits": 3.590702249920097,
+          "unique_residues": 15.277777777777779
+        }
+      },
+      {
+        "stage": "stage-one",
+        "profile": "z-ai/glm-5.3-flash:max",
+        "n": 10,
+        "means": {
+          "beta_branched_fraction_beta": 0.5275045520973728,
+          "beta_branched_fraction_nonbeta": 0.18427961166209375,
+          "beta_enrichment": 0.2892479640086675,
+          "beta_positions": 18.4,
+          "boltz2_long_minus_short_recall": -0.1660015218726207,
+          "effective_alphabet": 9.348346785373984,
+          "esmfold2_long_minus_short_recall": -0.15673710083266207,
+          "longest_homopolymer": 1.9,
+          "maximum_residue_fraction": 0.21220238095238092,
+          "normalized_shannon": 0.7295090883485641,
+          "shannon_bits": 3.1528858244093265,
+          "unique_residues": 12.5
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "all",
+        "n": 76,
+        "means": {
+          "beta_branched_fraction_beta": 0.5151440056542098,
+          "beta_branched_fraction_nonbeta": 0.20610562900920323,
+          "beta_enrichment": 0.2652751636288036,
+          "beta_positions": 34.6578947368421,
+          "boltz2_long_minus_short_recall": -0.23568665221759713,
+          "effective_alphabet": 10.804206746724088,
+          "esmfold2_long_minus_short_recall": -0.30034768927891947,
+          "longest_homopolymer": 2.0789473684210527,
+          "maximum_residue_fraction": 0.19706937799043062,
+          "normalized_shannon": 0.784152770147128,
+          "shannon_bits": 3.389051887982625,
+          "unique_residues": 15.421052631578947
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "claude-fable-5-2:high",
+        "n": 6,
+        "means": {
+          "beta_branched_fraction_beta": 0.5632738095238096,
+          "beta_branched_fraction_nonbeta": 0.1471590011701952,
+          "beta_enrichment": 0.37804667140488035,
+          "beta_positions": 35.666666666666664,
+          "boltz2_long_minus_short_recall": -0.4706717403769842,
+          "effective_alphabet": 9.973997249655216,
+          "esmfold2_long_minus_short_recall": -0.39643317900089325,
+          "longest_homopolymer": 2.3333333333333335,
+          "maximum_residue_fraction": 0.2196969696969697,
+          "normalized_shannon": 0.7638245369230164,
+          "shannon_bits": 3.3011947256919147,
+          "unique_residues": 15.333333333333334
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "claude-opus-5-5:high",
+        "n": 5,
+        "means": {
+          "beta_branched_fraction_beta": 0.5068037518037518,
+          "beta_branched_fraction_nonbeta": 0.16146825396825398,
+          "beta_enrichment": 0.2888263588263588,
+          "beta_positions": 34.4,
+          "boltz2_long_minus_short_recall": -0.2646094383168379,
+          "effective_alphabet": 9.735024245488837,
+          "esmfold2_long_minus_short_recall": -0.33475616394786095,
+          "longest_homopolymer": 2.2,
+          "maximum_residue_fraction": 0.19886363636363635,
+          "normalized_shannon": 0.751526882482174,
+          "shannon_bits": 3.248045147462822,
+          "unique_residues": 14.8
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "claude-sonnet-5-5:high",
+        "n": 5,
+        "means": {
+          "beta_branched_fraction_beta": 0.31028138528138527,
+          "beta_branched_fraction_nonbeta": 0.2366053391053391,
+          "beta_enrichment": -0.01398508898508898,
+          "beta_positions": 34.4,
+          "boltz2_long_minus_short_recall": -0.04623505178858669,
+          "effective_alphabet": 12.255794045391829,
+          "esmfold2_long_minus_short_recall": -0.048938024707256764,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.18068181818181817,
+          "normalized_shannon": 0.8318745066601387,
+          "shannon_bits": 3.595301801755018,
+          "unique_residues": 17.2
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "claude-sonnet-5-5:xhigh",
+        "n": 6,
+        "means": {
+          "beta_branched_fraction_beta": 0.4644047619047619,
+          "beta_branched_fraction_nonbeta": 0.19387177568147718,
+          "beta_enrichment": 0.20058573474618252,
+          "beta_positions": 35.666666666666664,
+          "boltz2_long_minus_short_recall": -0.1262606669799566,
+          "effective_alphabet": 10.127865007813805,
+          "esmfold2_long_minus_short_recall": -0.23441404613675162,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.2159090909090909,
+          "normalized_shannon": 0.7656377703276266,
+          "shannon_bits": 3.3090313900858876,
+          "unique_residues": 15.0
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "deepseek/deepseek-v4.1-flash-1017:max",
+        "n": 5,
+        "means": {
+          "beta_branched_fraction_beta": 0.23538961038961037,
+          "beta_branched_fraction_nonbeta": 0.14131275440976934,
+          "beta_enrichment": 0.06236835303999483,
+          "beta_positions": 32.8,
+          "boltz2_long_minus_short_recall": 0.01802451221303939,
+          "effective_alphabet": 11.36167863758399,
+          "esmfold2_long_minus_short_recall": -0.10275437848959892,
+          "longest_homopolymer": 2.8,
+          "maximum_residue_fraction": 0.18181818181818182,
+          "normalized_shannon": 0.7945388364761234,
+          "shannon_bits": 3.4339397198452737,
+          "unique_residues": 15.2
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gemini-4-carbon-high:high",
+        "n": 5,
+        "means": {
+          "beta_branched_fraction_beta": 0.60004329004329,
+          "beta_branched_fraction_nonbeta": 0.22364557084706335,
+          "beta_enrichment": 0.35031587193900626,
+          "beta_positions": 42.8,
+          "boltz2_long_minus_short_recall": -0.33751275764893707,
+          "effective_alphabet": 11.421545500188968,
+          "esmfold2_long_minus_short_recall": -0.37698017956609575,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.18636363636363637,
+          "normalized_shannon": 0.811895624174641,
+          "shannon_bits": 3.508954508236492,
+          "unique_residues": 16.0
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gemini-4-hydrogen-high:high",
+        "n": 5,
+        "means": {
+          "beta_branched_fraction_beta": 0.5252525252525252,
+          "beta_branched_fraction_nonbeta": 0.25734396200814114,
+          "beta_enrichment": 0.23839137645107797,
+          "beta_positions": 32.8,
+          "boltz2_long_minus_short_recall": -0.28652799846223675,
+          "effective_alphabet": 11.94575714510134,
+          "esmfold2_long_minus_short_recall": -0.25402339866915297,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.15909090909090912,
+          "normalized_shannon": 0.8260828257555424,
+          "shannon_bits": 3.5702705733368205,
+          "unique_residues": 15.8
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gemini-4-hydrogen-xhigh:xhigh",
+        "n": 6,
+        "means": {
+          "beta_branched_fraction_beta": 0.5441937229437229,
+          "beta_branched_fraction_nonbeta": 0.23061191158206085,
+          "beta_enrichment": 0.30054858284335895,
+          "beta_positions": 35.666666666666664,
+          "boltz2_long_minus_short_recall": -0.2597264544711069,
+          "effective_alphabet": 11.381400394502338,
+          "esmfold2_long_minus_short_recall": -0.3438682340474966,
+          "longest_homopolymer": 1.8333333333333333,
+          "maximum_residue_fraction": 0.16856060606060605,
+          "normalized_shannon": 0.8112134640274352,
+          "shannon_bits": 3.506006261131071,
+          "unique_residues": 15.666666666666666
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gemini-4-neon-high:high",
+        "n": 6,
+        "means": {
+          "beta_branched_fraction_beta": 0.5075324675324675,
+          "beta_branched_fraction_nonbeta": 0.2249705656422074,
+          "beta_enrichment": 0.2666675281600655,
+          "beta_positions": 35.666666666666664,
+          "boltz2_long_minus_short_recall": -0.260017565302948,
+          "effective_alphabet": 12.058591215152196,
+          "esmfold2_long_minus_short_recall": -0.36111978276038087,
+          "longest_homopolymer": 1.6666666666666667,
+          "maximum_residue_fraction": 0.1543560606060606,
+          "normalized_shannon": 0.8306524019076956,
+          "shannon_bits": 3.5900199528905383,
+          "unique_residues": 16.666666666666668
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gpt-6.1-terra:xhigh",
+        "n": 6,
+        "means": {
+          "beta_branched_fraction_beta": 0.6689989177489177,
+          "beta_branched_fraction_nonbeta": 0.19416374117866653,
+          "beta_enrichment": 0.37775330598091794,
+          "beta_positions": 35.666666666666664,
+          "boltz2_long_minus_short_recall": -0.18930613301227525,
+          "effective_alphabet": 6.513768939875443,
+          "esmfold2_long_minus_short_recall": -0.3358885404794317,
+          "longest_homopolymer": 2.3333333333333335,
+          "maximum_residue_fraction": 0.30303030303030304,
+          "normalized_shannon": 0.6040592331179472,
+          "shannon_bits": 2.610700570588571,
+          "unique_residues": 10.0
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gpt-6.2-astra:high",
+        "n": 6,
+        "means": {
+          "beta_branched_fraction_beta": 0.6511958874458874,
+          "beta_branched_fraction_nonbeta": 0.26540987343226147,
+          "beta_enrichment": 0.3241038045702225,
+          "beta_positions": 35.666666666666664,
+          "boltz2_long_minus_short_recall": -0.34982791283263753,
+          "effective_alphabet": 10.049740059623115,
+          "esmfold2_long_minus_short_recall": -0.5377877106564107,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.20833333333333334,
+          "normalized_shannon": 0.7677235035168056,
+          "shannon_bits": 3.3180457789546387,
+          "unique_residues": 14.833333333333334
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gpt-6.2-sol:high",
+        "n": 5,
+        "means": {
+          "beta_branched_fraction_beta": 0.5877922077922079,
+          "beta_branched_fraction_nonbeta": 0.20337764640003445,
+          "beta_enrichment": 0.3605718880345747,
+          "beta_positions": 31.6,
+          "boltz2_long_minus_short_recall": -0.33149535365463734,
+          "effective_alphabet": 11.682865100041749,
+          "esmfold2_long_minus_short_recall": -0.3246709905933395,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.17727272727272728,
+          "normalized_shannon": 0.818362606878201,
+          "shannon_bits": 3.536904342472159,
+          "unique_residues": 16.4
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "gpt-6.2-sol:xhigh",
+        "n": 6,
+        "means": {
+          "beta_branched_fraction_beta": 0.46792207792207796,
+          "beta_branched_fraction_nonbeta": 0.21017239739254664,
+          "beta_enrichment": 0.23647030001507616,
+          "beta_positions": 35.666666666666664,
+          "boltz2_long_minus_short_recall": -0.22144392334992882,
+          "effective_alphabet": 12.713375811440104,
+          "esmfold2_long_minus_short_recall": -0.3027328918219376,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.1846590909090909,
+          "normalized_shannon": 0.8449885939505345,
+          "shannon_bits": 3.6519799440541854,
+          "unique_residues": 17.333333333333332
+        }
+      },
+      {
+        "stage": "stage-two",
+        "profile": "z-ai/glm-5.3-flash:max",
+        "n": 4,
+        "means": {
+          "beta_branched_fraction_beta": 0.43761904761904763,
+          "beta_branched_fraction_nonbeta": 0.1867761436324869,
+          "beta_enrichment": 0.225998578535892,
+          "beta_positions": 23.0,
+          "boltz2_long_minus_short_recall": -0.10171968807284407,
+          "effective_alphabet": 10.548489328418437,
+          "esmfold2_long_minus_short_recall": -0.13558559897788494,
+          "longest_homopolymer": 2.0,
+          "maximum_residue_fraction": 0.20738636363636362,
+          "normalized_shannon": 0.7739017741053147,
+          "shannon_bits": 3.3447478201889327,
+          "unique_residues": 16.5
+        }
+      }
+    ]
+  }
+}

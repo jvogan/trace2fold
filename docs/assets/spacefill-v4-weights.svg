@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 370" width="960" height="370" role="img" aria-label="Three geometric terms in the 0 to 100 spacefill-v4 score" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .sf-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .sf-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+    </style>
+    <linearGradient id="sf-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="368" rx="16" fill="url(#sf-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <rect x="20" y="14" width="108" height="24" rx="12" fill="#e8f0fe"/>
+  <text x="74" y="30" text-anchor="middle" class="sf-mono" font-size="12" font-weight="700" fill="#1a73e8">spacefill-v4</text>
+  <text x="140" y="32" class="sf-sans" font-size="18" font-weight="700" fill="#0f172a">Three geometric terms in the 0 to 100 spacefill-v4 score</text>
+  <text x="940" y="31" text-anchor="end" class="sf-mono" font-size="12" font-weight="600" fill="#64748b">40 + 25 + 35 = 100 pts</text>
+
+  <!-- Full-width proportional stacked weight bar -->
+  <rect x="20" y="48" width="364" height="34" rx="8" fill="#1a73e8"/>
+  <text x="202" y="70" text-anchor="middle" class="sf-sans" font-size="13.5" font-weight="700" fill="#ffffff">40% Proper Kabsch GDT-HA</text>
+
+  <rect x="388" y="48" width="228" height="34" rx="8" fill="#0d9488"/>
+  <text x="502" y="70" text-anchor="middle" class="sf-sans" font-size="13.5" font-weight="700" fill="#ffffff">25% Local Cα lDDT</text>
+
+  <rect x="620" y="48" width="320" height="34" rx="8" fill="#7c3aed"/>
+  <text x="780" y="70" text-anchor="middle" class="sf-sans" font-size="13.5" font-weight="700" fill="#ffffff">35% Nonlocal contact F1</text>
+
+  <!-- Card 1: Aligned position accuracy (40 pts) -->
+  <g transform="translate(20, 96)">
+    <rect width="296" height="258" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="296" height="4" rx="2" fill="#1a73e8"/>
+    <text x="14" y="28" class="sf-sans" font-size="15" font-weight="700" fill="#0f172a">1. Aligned position accuracy</text>
+    <text x="14" y="48" class="sf-mono" font-size="12.5" font-weight="700" fill="#1a73e8">40 pts · proper Kabsch 1..N</text>
+
+    <rect x="14" y="60" width="268" height="106" rx="8" fill="#f8fafd" stroke="#e2e8f0"/>
+    <circle cx="76" cy="113" r="40" fill="#dbeafe" fill-opacity="0.35" stroke="#93c5fd" stroke-width="1.2" stroke-dasharray="4 2"/>
+    <circle cx="76" cy="113" r="29" fill="#bfdbfe" fill-opacity="0.35" stroke="#60a5fa" stroke-width="1.2"/>
+    <circle cx="76" cy="113" r="19" fill="#93c5fd" fill-opacity="0.35" stroke="#3b82f6" stroke-width="1.2"/>
+    <circle cx="76" cy="113" r="9" fill="#1a73e8" fill-opacity="0.25" stroke="#1a73e8" stroke-width="1.4"/>
+    <polyline points="24,132 50,96 76,113 104,92 128,128" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+    <polyline points="26,129 52,99 79,111 102,95 126,124" fill="none" stroke="#1a73e8" stroke-width="2.4" stroke-linecap="round"/>
+    <circle cx="76" cy="113" r="3.5" fill="#0f172a"/>
+    <circle cx="79" cy="111" r="3.5" fill="#1a73e8"/>
+
+    <text x="206" y="84" text-anchor="middle" class="sf-mono" font-size="12" font-weight="700" fill="#1e40af">0.5, 1, 2, 4 Å</text>
+    <rect x="142" y="96" width="128" height="52" rx="7" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="206" y="117" text-anchor="middle" class="sf-mono" font-size="12.5" font-weight="700" fill="#dc2626">det = +1</text>
+    <text x="206" y="136" text-anchor="middle" class="sf-sans" font-size="12" font-weight="600" fill="#991b1b">(mirrors fail)</text>
+
+    <text x="14" y="190" class="sf-sans" font-size="13.5" fill="#1e293b">• Single rotation on residues 1..N</text>
+    <text x="14" y="216" class="sf-sans" font-size="13.5" fill="#1e293b">• Averages fit at 0.5, 1, 2, 4 Å</text>
+    <text x="14" y="242" class="sf-sans" font-size="13.5" fill="#1e293b">• Rejects chiral mirror reflections</text>
+  </g>
+
+  <!-- Card 2: Local Ca distance agreement (25 pts) -->
+  <g transform="translate(332, 96)">
+    <rect width="296" height="258" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="296" height="4" rx="2" fill="#0d9488"/>
+    <text x="14" y="28" class="sf-sans" font-size="15" font-weight="700" fill="#0f172a">2. Local Cα distance agreement</text>
+    <text x="14" y="48" class="sf-mono" font-size="12.5" font-weight="700" fill="#0d9488">25 pts · superposition-free lDDT</text>
+
+    <rect x="14" y="60" width="268" height="106" rx="8" fill="#f0fdfa" stroke="#99f6e4"/>
+    <circle cx="40" cy="94" r="4.5" fill="#0d9488"/>
+    <circle cx="78" cy="88" r="4.5" fill="#0d9488"/>
+    <circle cx="54" cy="130" r="4.5" fill="#0d9488"/>
+    <line x1="40" y1="94" x2="78" y2="88" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="3 2"/>
+    <line x1="40" y1="94" x2="54" y2="130" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="3 2"/>
+    <line x1="78" y1="88" x2="54" y2="130" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="3 2"/>
+
+    <path d="M 82,90 Q 108,72 134,98" fill="none" stroke="#d97706" stroke-width="2.2" stroke-dasharray="4 3"/>
+    <text x="108" y="78" text-anchor="middle" class="sf-sans" font-size="12" font-weight="700" fill="#b45309">hinge</text>
+
+    <circle cx="138" cy="102" r="4.5" fill="#0d9488"/>
+    <circle cx="174" cy="88" r="4.5" fill="#0d9488"/>
+    <circle cx="162" cy="134" r="4.5" fill="#0d9488"/>
+    <line x1="138" y1="102" x2="174" y2="88" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="3 2"/>
+    <line x1="138" y1="102" x2="162" y2="134" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="3 2"/>
+    <line x1="174" y1="88" x2="162" y2="134" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="3 2"/>
+
+    <text x="232" y="96" text-anchor="middle" class="sf-mono" font-size="12" font-weight="700" fill="#0f766e">&lt; 15 Å</text>
+    <text x="232" y="116" text-anchor="middle" class="sf-mono" font-size="12" fill="#334155">|i - j| &gt; 1</text>
+    <text x="232" y="138" text-anchor="middle" class="sf-sans" font-size="12" font-weight="600" fill="#0f766e">No alignment</text>
+
+    <text x="14" y="190" class="sf-sans" font-size="13.5" fill="#1e293b">• Pair error &lt; 0.5, 1, 2, 4 Å</text>
+    <text x="14" y="216" class="sf-sans" font-size="13.5" fill="#1e293b">• Target pairs &lt; 15 Å, |i - j| &gt; 1</text>
+    <text x="14" y="242" class="sf-sans" font-size="13.5" fill="#1e293b">• Local packing survives hinge tilt</text>
+  </g>
+
+  <!-- Card 3: Nonlocal contact F1 (35 pts) -->
+  <g transform="translate(644, 96)">
+    <rect width="296" height="258" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="296" height="4" rx="2" fill="#7c3aed"/>
+    <text x="14" y="28" class="sf-sans" font-size="15" font-weight="700" fill="#0f172a">3. Nonlocal contact F1</text>
+    <text x="14" y="48" class="sf-mono" font-size="12.5" font-weight="700" fill="#7c3aed">35 pts · long-range core contacts</text>
+
+    <rect x="14" y="60" width="268" height="106" rx="8" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <path d="M 34,126 L 34,86 Q 56,70 78,86 L 78,126 Q 100,142 122,126 L 122,86" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+    <line x1="38" y1="98" x2="74" y2="98" stroke="#1a73e8" stroke-width="2" stroke-dasharray="3 2"/>
+    <line x1="38" y1="116" x2="74" y2="116" stroke="#1a73e8" stroke-width="2" stroke-dasharray="3 2"/>
+    <line x1="82" y1="104" x2="118" y2="104" stroke="#1a73e8" stroke-width="2" stroke-dasharray="3 2"/>
+    <text x="78" y="154" text-anchor="middle" class="sf-mono" font-size="12" font-weight="700" fill="#5b21b6">Folded core</text>
+
+    <line x1="146" y1="72" x2="146" y2="154" stroke="#ddd6fe" stroke-width="1.4"/>
+
+    <text x="212" y="92" text-anchor="middle" class="sf-sans" font-size="12.5" font-weight="600" fill="#475569">Extended rod</text>
+    <line x1="164" y1="114" x2="260" y2="114" stroke="#94a3b8" stroke-width="4" stroke-linecap="round"/>
+    <text x="212" y="148" text-anchor="middle" class="sf-mono" font-size="13" font-weight="700" fill="#dc2626">F1 = 0.00</text>
+
+    <text x="14" y="190" class="sf-sans" font-size="13.5" fill="#1e293b">• Distant pairs with |i - j| &gt;= 6</text>
+    <text x="14" y="216" class="sf-sans" font-size="13.5" fill="#1e293b">• Contact threshold &lt; 8.0 Å</text>
+    <text x="14" y="242" class="sf-sans" font-size="13.5" fill="#1e293b">• Extended rod scores F1 = 0.00</text>
+  </g>
+</svg>

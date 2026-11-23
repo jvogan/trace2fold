@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Trace2Fold: Zero-Tool 3D Inverse Folding Benchmark"
+message: "If you use Trace2Fold, its scoring harness, or published benchmark results, please cite this software."
+type: software
+authors:
+  - family-names: "Vogan"
+    given-names: "Jacob"
+repository-code: "https://github.com/jvogan/trace2fold"
+url: "https://github.com/jvogan/trace2fold"
+license: MIT
+version: "0.4.0"
+date-released: "2026-11-22"
+keywords:
+  - protein inverse folding
+  - 3D spatial reasoning
+  - language model benchmark
+  - structural biology

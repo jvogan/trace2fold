@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360" role="img" aria-label="Third-predictor sensitivity: Apple SimpleFold 3B agreement with primary predictors" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .sc-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .sc-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+    </style>
+    <linearGradient id="sc-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="358" rx="16" fill="url(#sc-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Main Title + Badge -->
+  <rect x="18" y="12" width="166" height="24" rx="12" fill="#f3e8ff" stroke="#ddd6fe"/>
+  <text x="101" y="28" text-anchor="middle" class="sc-mono" font-size="12" font-weight="700" fill="#6d28d9">Third-predictor check</text>
+  <text x="196" y="30" class="sc-sans" font-size="18" font-weight="700" fill="#0f172a">Apple SimpleFold 3B agreement with primary predictors</text>
+
+  <!-- Subtitle + Inline Legend -->
+  <text x="18" y="53" class="sc-mono" font-size="12" fill="#475569">72 unique foldable sequences · tau = 0.01 · 500 flow-matching steps · 0 model calls</text>
+  <rect x="652" y="42" width="12" height="12" rx="3" fill="#1a73e8"/>
+  <text x="669" y="53" class="sc-sans" font-size="12.5" font-weight="600" fill="#1e293b">versus Boltz-2</text>
+  <rect x="780" y="42" width="12" height="12" rx="3" fill="#0d9488"/>
+  <text x="797" y="53" class="sc-sans" font-size="12.5" font-weight="600" fill="#1e293b">versus ESMFold2-Fast</text>
+
+  <!-- Left Panel: Stage 1 cohort -->
+  <g transform="translate(18, 64)">
+    <rect width="454" height="282" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="454" height="4" rx="2" fill="#1a73e8"/>
+    <text x="14" y="27" class="sc-sans" font-size="14.5" font-weight="700" fill="#0f172a">Stage 1 cohort (50 foldable cells, 46 evaluated)</text>
+    <text x="14" y="46" class="sc-sans" font-size="12" fill="#475569">Pearson r bars with 95% cluster-bootstrap CI (4 twin clusters)</text>
+
+    <line x1="100.0" y1="58" x2="100.0" y2="236" stroke="#94a3b8" stroke-width="1.1"/>
+    <text x="100.0" y="253" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.0</text>
+    <line x1="151.0" y1="58" x2="151.0" y2="236" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="151.0" y="253" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.25</text>
+    <line x1="202.0" y1="58" x2="202.0" y2="236" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="202.0" y="253" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.50</text>
+    <line x1="253.0" y1="58" x2="253.0" y2="236" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="253.0" y="253" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.75</text>
+    <line x1="304.0" y1="58" x2="304.0" y2="236" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="304.0" y="253" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">1.0</text>
+    <line x1="100" y1="236" x2="304" y2="236" stroke="#94a3b8" stroke-width="1.2"/>
+
+    <text x="92" y="78.5" text-anchor="end" class="sc-sans" font-size="13" font-weight="700" fill="#0f172a">Composite</text>
+    <text x="92" y="94.0" text-anchor="end" class="sc-sans" font-size="12" font-weight="600" fill="#475569">score</text>
+    <rect x="100.0" y="64.0" width="191.0" height="17.0" rx="4" fill="#1a73e8" fill-opacity="0.88"/>
+    <line x1="250.0" y1="72.5" x2="300.7" y2="72.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="250.0" y1="68.3" x2="250.0" y2="76.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="300.7" y1="68.3" x2="300.7" y2="76.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="77.0" class="sc-mono" font-size="12" font-weight="700" fill="#1e40af">r=0.94 · ρ=0.91</text>
+    <rect x="100.0" y="85.0" width="171.8" height="17.0" rx="4" fill="#0d9488" fill-opacity="0.88"/>
+    <line x1="255.2" y1="93.5" x2="282.4" y2="93.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="255.2" y1="89.3" x2="255.2" y2="97.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="282.4" y1="89.3" x2="282.4" y2="97.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="98.0" class="sc-mono" font-size="12" font-weight="700" fill="#0f766e">r=0.84 · ρ=0.83</text>
+    <text x="92" y="138.5" text-anchor="end" class="sc-sans" font-size="13" font-weight="700" fill="#0f172a">Local</text>
+    <text x="92" y="154.0" text-anchor="end" class="sc-sans" font-size="12" font-weight="600" fill="#475569">Cα lDDT</text>
+    <rect x="100.0" y="124.0" width="192.8" height="17.0" rx="4" fill="#1a73e8" fill-opacity="0.88"/>
+    <line x1="274.7" y1="132.5" x2="300.3" y2="132.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="274.7" y1="128.3" x2="274.7" y2="136.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="300.3" y1="128.3" x2="300.3" y2="136.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="137.0" class="sc-mono" font-size="12" font-weight="700" fill="#1e40af">r=0.95 · ρ=0.91</text>
+    <rect x="100.0" y="145.0" width="175.0" height="17.0" rx="4" fill="#0d9488" fill-opacity="0.88"/>
+    <line x1="251.2" y1="153.5" x2="285.4" y2="153.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="251.2" y1="149.3" x2="251.2" y2="157.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="285.4" y1="149.3" x2="285.4" y2="157.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="158.0" class="sc-mono" font-size="12" font-weight="700" fill="#0f766e">r=0.86 · ρ=0.82</text>
+    <text x="92" y="198.5" text-anchor="end" class="sc-sans" font-size="13" font-weight="700" fill="#0f172a">Nonlocal</text>
+    <text x="92" y="214.0" text-anchor="end" class="sc-sans" font-size="12" font-weight="600" fill="#475569">contact F1</text>
+    <rect x="100.0" y="184.0" width="192.1" height="17.0" rx="4" fill="#1a73e8" fill-opacity="0.88"/>
+    <line x1="270.0" y1="192.5" x2="299.0" y2="192.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="270.0" y1="188.3" x2="270.0" y2="196.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="299.0" y1="188.3" x2="299.0" y2="196.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="197.0" class="sc-mono" font-size="12" font-weight="700" fill="#1e40af">r=0.94 · ρ=0.92</text>
+    <rect x="100.0" y="205.0" width="178.1" height="17.0" rx="4" fill="#0d9488" fill-opacity="0.88"/>
+    <line x1="266.6" y1="213.5" x2="293.2" y2="213.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="266.6" y1="209.3" x2="266.6" y2="217.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="293.2" y1="209.3" x2="293.2" y2="217.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="218.0" class="sc-mono" font-size="12" font-weight="700" fill="#0f766e">r=0.87 · ρ=0.86</text>
+
+    <text x="202" y="270" text-anchor="middle" class="sc-sans" font-size="12" font-weight="600" fill="#475569">Pearson r (0 to 1, whiskers show 95% CI)</text>
+  </g>
+
+  <!-- Right Panel: Stage 2 cohort -->
+  <g transform="translate(488, 64)">
+    <rect width="454" height="282" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="454" height="4" rx="2" fill="#7c3aed"/>
+    <text x="14" y="27" class="sc-sans" font-size="14.5" font-weight="700" fill="#0f172a">Stage 2 cohort (22 foldable cells at 176 residues)</text>
+    <text x="14" y="46" class="sc-sans" font-size="12" fill="#475569">6 evaluated cells · 2 twin clusters · 176-aa chains</text>
+
+    <line x1="100.0" y1="58" x2="100.0" y2="164" stroke="#94a3b8" stroke-width="1.1"/>
+    <text x="100.0" y="180" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.0</text>
+    <line x1="151.0" y1="58" x2="151.0" y2="164" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="151.0" y="180" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.25</text>
+    <line x1="202.0" y1="58" x2="202.0" y2="164" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="202.0" y="180" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.50</text>
+    <line x1="253.0" y1="58" x2="253.0" y2="164" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="253.0" y="180" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">0.75</text>
+    <line x1="304.0" y1="58" x2="304.0" y2="164" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="304.0" y="180" text-anchor="middle" class="sc-mono" font-size="12" fill="#475569">1.0</text>
+    <line x1="100" y1="164" x2="304" y2="164" stroke="#94a3b8" stroke-width="1.2"/>
+
+    <text x="92" y="78.5" text-anchor="end" class="sc-sans" font-size="13" font-weight="700" fill="#0f172a">Composite</text>
+    <text x="92" y="94.0" text-anchor="end" class="sc-sans" font-size="12" font-weight="600" fill="#475569">score</text>
+    <rect x="100.0" y="64.0" width="202.6" height="17.0" rx="4" fill="#1a73e8" fill-opacity="0.88"/>
+    <line x1="302.6" y1="72.5" x2="303.9" y2="72.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="302.6" y1="68.3" x2="302.6" y2="76.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="303.9" y1="68.3" x2="303.9" y2="76.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="77.0" class="sc-mono" font-size="12" font-weight="700" fill="#1e40af">r=0.99 · ρ=0.77</text>
+    <rect x="100.0" y="85.0" width="202.8" height="17.0" rx="4" fill="#0d9488" fill-opacity="0.88"/>
+    <line x1="302.8" y1="93.5" x2="304.0" y2="93.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="302.8" y1="89.3" x2="302.8" y2="97.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="304.0" y1="89.3" x2="304.0" y2="97.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="98.0" class="sc-mono" font-size="12" font-weight="700" fill="#0f766e">r=0.99 · ρ=0.94</text>
+    <text x="92" y="130.5" text-anchor="end" class="sc-sans" font-size="13" font-weight="700" fill="#0f172a">Nonlocal</text>
+    <text x="92" y="146.0" text-anchor="end" class="sc-sans" font-size="12" font-weight="600" fill="#475569">contact F1</text>
+    <rect x="100.0" y="116.0" width="203.4" height="17.0" rx="4" fill="#1a73e8" fill-opacity="0.88"/>
+    <line x1="303.4" y1="124.5" x2="303.9" y2="124.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="303.4" y1="120.3" x2="303.4" y2="128.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="303.9" y1="120.3" x2="303.9" y2="128.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="129.0" class="sc-mono" font-size="12" font-weight="700" fill="#1e40af">r=1.00 · ρ=0.89</text>
+    <rect x="100.0" y="137.0" width="203.6" height="17.0" rx="4" fill="#0d9488" fill-opacity="0.88"/>
+    <line x1="303.6" y1="145.5" x2="303.9" y2="145.5" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="303.6" y1="141.3" x2="303.6" y2="149.7" stroke="#0f172a" stroke-width="1.8"/>
+    <line x1="303.9" y1="141.3" x2="303.9" y2="149.7" stroke="#0f172a" stroke-width="1.8"/>
+    <text x="313" y="150.0" class="sc-mono" font-size="12" font-weight="700" fill="#0f766e">r=1.00 · ρ=0.94</text>
+
+    <!-- Concise geometric callout box -->
+    <rect x="14" y="192" width="426" height="78" rx="9" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1.2"/>
+    <rect x="14" y="192" width="4" height="78" rx="2" fill="#7c3aed"/>
+    <text x="28" y="213" class="sc-sans" font-size="13" font-weight="700" fill="#5b21b6">MSA-free flow matching without a Pairformer trunk</text>
+    <text x="28" y="234" class="sc-sans" font-size="12.5" fill="#1e293b">SimpleFold 3B reproduces Boltz-2 and ESMFold2-Fast rankings</text>
+    <text x="28" y="254" class="sc-sans" font-size="12.5" fill="#1e293b">on score, contact F1, and Cα lDDT (Stage 2 r = 0.99 and 0.97).</text>
+  </g>
+</svg>

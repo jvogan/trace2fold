@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 375" width="960" height="375" role="img" aria-label="Five questions tested across the Trace2Fold benchmark suite" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .tm-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .tm-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+    </style>
+    <marker id="tm-arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#94a3b8"/>
+    </marker>
+    <linearGradient id="tm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="373" rx="16" fill="url(#tm-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="20" y="31" class="tm-sans" font-size="18" font-weight="700" fill="#0f172a">Five questions tested across the Trace2Fold benchmark suite</text>
+  <text x="20" y="51" class="tm-sans" font-size="12.5" fill="#475569">Structured map of each experiment, its paired control or ablation, and its measured headline finding</text>
+
+  <rect x="18" y="62" width="924" height="302" rx="12" fill="#f8fafd" stroke="#cbd5e1" stroke-width="1.2"/>
+
+  <!-- Column headers -->
+  <text x="38" y="83" class="tm-mono" font-size="12" font-weight="700" fill="#475569">QUESTION ASKED</text>
+  <text x="420" y="83" class="tm-mono" font-size="12" font-weight="700" fill="#475569">HOW WE TEST IT</text>
+  <text x="656" y="83" class="tm-mono" font-size="12" font-weight="700" fill="#475569">KEY MEASURED RESULT</text>
+
+  <g transform="translate(26, 94)">
+    <rect width="908" height="46" rx="9" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="46" rx="2" fill="#1a73e8"/>
+    <rect x="12" y="12" width="114" height="22" rx="11" fill="#dbeafe"/>
+    <text x="69" y="27" text-anchor="middle" class="tm-mono" font-size="12" font-weight="700" fill="#1e40af">3D design</text>
+    <text x="136" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">Can a zero-tool LLM fold an</text>
+    <text x="136" y="36" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">unnamed 3D backbone?</text>
+    <line x1="364" y1="23" x2="384" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="394" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#334155">18 Stage 1 + 6 Stage 2</text>
+    <text x="394" y="36" class="tm-mono" font-size="12" fill="#64748b">backbone shapes</text>
+    <line x1="600" y1="23" x2="620" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="630" y="20" class="tm-mono" font-size="12" font-weight="700" fill="#1e40af">56.98 (S1) and 46.44 (S2)</text>
+    <text x="630" y="36" class="tm-sans" font-size="12" font-weight="600" fill="#334155">versus 91 to 93 specialists</text>
+  </g>
+  <g transform="translate(26, 147)">
+    <rect width="908" height="46" rx="9" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="46" rx="2" fill="#0d9488"/>
+    <rect x="12" y="12" width="114" height="22" rx="11" fill="#ccfbf1"/>
+    <text x="69" y="27" text-anchor="middle" class="tm-mono" font-size="12" font-weight="700" fill="#0f766e">3D specificity</text>
+    <text x="136" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">Did it design that 3D topology</text>
+    <text x="136" y="36" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">or paste 1D motifs?</text>
+    <line x1="364" y1="23" x2="384" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="394" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#334155">Matched Twin Decoy</text>
+    <text x="394" y="36" class="tm-mono" font-size="12" fill="#64748b">(Twin Δ margin)</text>
+    <line x1="600" y1="23" x2="620" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="630" y="20" class="tm-mono" font-size="12" font-weight="700" fill="#0f766e">+37.8 (S1) and +35.7 (S2)</text>
+    <text x="630" y="36" class="tm-sans" font-size="12" font-weight="600" fill="#334155">versus +1.5 for 1D rule</text>
+  </g>
+  <g transform="translate(26, 200)">
+    <rect width="908" height="46" rx="9" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="46" rx="2" fill="#7c3aed"/>
+    <rect x="12" y="12" width="114" height="22" rx="11" fill="#f3e8ff"/>
+    <text x="69" y="27" text-anchor="middle" class="tm-mono" font-size="12" font-weight="700" fill="#6d28d9">Orientation cue</text>
+    <text x="136" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">Do side-chain arrows (dx, dy, dz)</text>
+    <text x="136" y="36" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">help beyond Cα XYZ?</text>
+    <line x1="364" y1="23" x2="384" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="394" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#334155">36-call Vectors minus</text>
+    <text x="394" y="36" class="tm-mono" font-size="12" fill="#64748b">Pure-Cα ablation</text>
+    <line x1="600" y1="23" x2="620" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="630" y="20" class="tm-mono" font-size="12" font-weight="700" fill="#6d28d9">+20.08 Carbon High, +19.05</text>
+    <text x="630" y="36" class="tm-sans" font-size="12" font-weight="600" fill="#334155">Neon High on Stage 1</text>
+  </g>
+  <g transform="translate(26, 253)">
+    <rect width="908" height="46" rx="9" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="46" rx="2" fill="#d97706"/>
+    <rect x="12" y="12" width="114" height="22" rx="11" fill="#fef3c7"/>
+    <text x="69" y="27" text-anchor="middle" class="tm-mono" font-size="12" font-weight="700" fill="#b45309">Generator check</text>
+    <text x="136" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">Does design work without a</text>
+    <text x="136" y="36" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">native generator sequence?</text>
+    <line x1="364" y1="23" x2="384" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="394" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#334155">24-call Genie 3</text>
+    <text x="394" y="36" class="tm-mono" font-size="12" fill="#64748b">pure-Cα twin pairs</text>
+    <line x1="600" y1="23" x2="620" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="630" y="20" class="tm-mono" font-size="12" font-weight="700" fill="#b45309">69.37 Carbon and 59.03 Neon</text>
+    <text x="630" y="36" class="tm-sans" font-size="12" font-weight="600" fill="#334155">at 80 aa (54.80 at 112 aa)</text>
+  </g>
+  <g transform="translate(26, 306)">
+    <rect width="908" height="46" rx="9" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="4" height="46" rx="2" fill="#0284c7"/>
+    <rect x="12" y="12" width="114" height="22" rx="11" fill="#e0f2fe"/>
+    <text x="69" y="27" text-anchor="middle" class="tm-mono" font-size="12" font-weight="700" fill="#0369a1">Predictor check</text>
+    <text x="136" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">Do rankings depend on Pairformer</text>
+    <text x="136" y="36" class="tm-sans" font-size="12.5" font-weight="600" fill="#0f172a">or language-model trunks?</text>
+    <line x1="364" y1="23" x2="384" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="394" y="20" class="tm-sans" font-size="12.5" font-weight="600" fill="#334155">442-cell Apple</text>
+    <text x="394" y="36" class="tm-mono" font-size="12" fill="#64748b">SimpleFold 3B check</text>
+    <line x1="600" y1="23" x2="620" y2="23" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#tm-arrow)"/>
+    <text x="630" y="20" class="tm-mono" font-size="12" font-weight="700" fill="#0369a1">14-LLM rank ρ = 0.987 and 0.969</text>
+    <text x="630" y="36" class="tm-sans" font-size="12" font-weight="600" fill="#334155">r = 0.921 and 0.914 (442 cells)</text>
+  </g>
+</svg>

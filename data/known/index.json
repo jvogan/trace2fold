@@ -1,0 +1,187 @@
+[
+  {
+    "id": "trp-cage",
+    "pdb_id": "1L2Y",
+    "model": 1,
+    "method": "solution NMR",
+    "family": "miniprotein",
+    "tier": "easy",
+    "tier_reason": "20-residue, single-chain compact fold with no disulfides.",
+    "chain": "A",
+    "path": "data/known/trp-cage.pdb",
+    "length": 20,
+    "chain_lengths": [
+      20
+    ],
+    "author_residue_ranges": {
+      "A": [
+        1,
+        20
+      ]
+    },
+    "sequence": "NLYIQWLKDGGPSSGRPPPS",
+    "pdb_url": "https://www.rcsb.org/structure/1L2Y",
+    "coordinate_url": "https://files.rcsb.org/download/1L2Y.pdb",
+    "article_url": "https://doi.org/10.1038/nsb798",
+    "source_sha256": "5d1bbb545a312dfff1ae1e64b6d8addecb2f561ddc4011aeb5bee9d1dfcd4438",
+    "fixture_sha256": "9c78f231da383fe049e8e365756801345f397ff4ac6807b402b41654aea2e1bc"
+  },
+  {
+    "id": "insulin",
+    "pdb_id": "1TRZ",
+    "model": 1,
+    "method": "X-ray diffraction",
+    "resolution_angstrom": 1.6,
+    "family": "insulin",
+    "tier": "medium",
+    "tier_reason": "Two associated chains and three disulfides in a compact 51-residue target.",
+    "chemistry": "Mature human insulin A and B chains from one protomer of the deposited assembly.",
+    "chains": [
+      "A",
+      "B"
+    ],
+    "path": "data/known/insulin.pdb",
+    "length": 51,
+    "chain_lengths": [
+      21,
+      30
+    ],
+    "author_residue_ranges": {
+      "A": [
+        1,
+        21
+      ],
+      "B": [
+        1,
+        30
+      ]
+    },
+    "sequence": "GIVEQCCTSICSLYQLENYCNFVNQHLCGSHLVEALYLVCGERGFFYTPKT",
+    "pdb_url": "https://www.rcsb.org/structure/1TRZ",
+    "coordinate_url": "https://files.rcsb.org/download/1TRZ.pdb",
+    "article_url": "https://doi.org/10.1021/bi00172a030",
+    "source_sha256": "cac675a9117f65874c7136b105eec2f8b41394f3308bf59be39ee4285e09c78b",
+    "fixture_sha256": "3eab5caefa58e1608474b5ff689058992f13c5f1142acce580a27ac5d2877658",
+    "disulfides": [
+      [
+        6,
+        11
+      ],
+      [
+        7,
+        28
+      ],
+      [
+        20,
+        40
+      ]
+    ],
+    "fixed": [
+      6,
+      7,
+      11,
+      20,
+      28,
+      40
+    ]
+  },
+  {
+    "id": "gfp",
+    "pdb_id": "1QY3",
+    "model": 1,
+    "method": "X-ray diffraction",
+    "resolution_angstrom": 2.0,
+    "family": "gfp",
+    "tier": "hard",
+    "tier_reason": "227-residue beta-barrel with an enclosed central helix.",
+    "chemistry": "Precyclization R96A GFP variant. Thr65, Tyr66 and Gly67 are three distinct canonical residues in the deposit.",
+    "chromophore_precursors": [
+      63,
+      64,
+      65
+    ],
+    "chain": "A",
+    "path": "data/known/gfp.pdb",
+    "length": 227,
+    "chain_lengths": [
+      227
+    ],
+    "author_residue_ranges": {
+      "A": [
+        3,
+        229
+      ]
+    },
+    "sequence": "KGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQEATISFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYITADKQKNGIKANFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGI",
+    "pdb_url": "https://www.rcsb.org/structure/1QY3",
+    "coordinate_url": "https://files.rcsb.org/download/1QY3.pdb",
+    "article_url": "https://doi.org/10.1073/pnas.2133463100",
+    "source_sha256": "6007c9825de8b38dee3c53effdc73d82836957acf35fd863b6e5f36c28e3e79f",
+    "fixture_sha256": "f8a131ee3df5a85bfe19eec4c85e0ee2466ba1f8ac314ffcbae5619dab98bc1a"
+  },
+  {
+    "id": "vhh-cdr3",
+    "pdb_id": "1I3V",
+    "model": 1,
+    "method": "X-ray diffraction",
+    "resolution_angstrom": 2.03,
+    "family": "vhh",
+    "tier": "hard",
+    "tier_reason": "Match the geometry of the masked 17-residue loop with the framework fixed.",
+    "mutable": [
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118
+    ],
+    "pair_status": "unpaired",
+    "chemistry": "Llama VHH A52 domain, chain A. SAbDab2 places CDR-H3 at author positions A102 to A118.",
+    "chain": "A",
+    "path": "data/known/vhh-cdr3.pdb",
+    "length": 129,
+    "chain_lengths": [
+      129
+    ],
+    "author_residue_ranges": {
+      "A": [
+        1,
+        129
+      ]
+    },
+    "sequence": "QVQLQESGGGLVQAGDSLKLSCEASGDSIGTYVIGWFRQAPGKERIYLATIGRNLVGPSDFYTRYADSVKGRFAVSRDNAKNTVNLQMNSLKPEDTAVYYCAAKTTTWGGNDPNNWNYWGQGTQVTVSS",
+    "pdb_url": "https://www.rcsb.org/structure/1I3V",
+    "coordinate_url": "https://files.rcsb.org/download/1I3V.pdb",
+    "article_url": "https://doi.org/10.1006/jmbi.2001.4856",
+    "source_sha256": "975c555988c135379b68df405493ad570642284d02cf2c97113c4a0b191a7194",
+    "fixture_sha256": "c3b3a228048ba0289728f21417eceb0b29db4814d4c577d725fb3cc5ff7334ce",
+    "disulfides": [
+      [
+        22,
+        101
+      ]
+    ],
+    "fixed": [
+      22,
+      101
+    ],
+    "numbering_source": {
+      "database": "SAbDab2",
+      "instance": "pdb_00001i3v-A",
+      "field": "CDR-H3",
+      "reference_url": "https://doi.org/10.1093/nar/gkag1091"
+    }
+  }
+]

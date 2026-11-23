@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" role="img" aria-label="Rotational core registration on Helix 3 of target 48-02-b (positions 36 to 48)" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .hw-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .hw-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+    </style>
+    <marker id="hw-arrow-blue" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#1a73e8"/>
+    </marker>
+    <marker id="hw-arrow-teal" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#0d9488"/>
+    </marker>
+    <linearGradient id="hw-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="378" rx="16" fill="url(#hw-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Main Title -->
+  <text x="20" y="33" class="hw-sans" font-size="18" font-weight="700" fill="#0f172a">Rotational core registration on Helix 3 of target 48-02-b (positions 36 to 48)</text>
+
+  <!-- Left Panel: Large Axial Helical Wheel -->
+  <g transform="translate(18, 48)">
+    <rect width="562" height="318" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="562" height="4" rx="2" fill="#1a73e8"/>
+    <text x="16" y="27" class="hw-sans" font-size="15" font-weight="700" fill="#0f172a">Helix 3 axial wheel (100° per residue)</text>
+    <text x="546" y="27" text-anchor="end" class="hw-mono" font-size="12" fill="#475569">Arrows = (dx, dy, dz)</text>
+
+    <!-- Shaded Buried Core Zone on Left -->
+    <path d="M 14,42 L 182,42 Q 214,165 182,286 L 14,286 Z" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.3" stroke-dasharray="5 3"/>
+    <text x="86" y="146" text-anchor="middle" class="hw-sans" font-size="14" font-weight="700" fill="#1e40af">Buried core</text>
+    <text x="86" y="166" text-anchor="middle" class="hw-sans" font-size="13" fill="#2563eb">Helices 1 and 2</text>
+    <text x="86" y="186" text-anchor="middle" class="hw-mono" font-size="12" fill="#1e40af">Inward vectors</text>
+
+    <!-- Shaded Water Solvent Zone on Right -->
+    <path d="M 424,42 L 548,42 L 548,286 L 424,286 Q 402,165 424,42 Z" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.3" stroke-dasharray="5 3"/>
+    <text x="490" y="148" text-anchor="middle" class="hw-sans" font-size="14" font-weight="700" fill="#0f766e">Water</text>
+    <text x="490" y="167" text-anchor="middle" class="hw-sans" font-size="14" font-weight="700" fill="#0f766e">solvent</text>
+    <text x="490" y="187" text-anchor="middle" class="hw-mono" font-size="12" fill="#0d9488">Outward</text>
+
+    <!-- Wheel guide ring and center -->
+    <circle cx="298" cy="168" r="94" fill="none" stroke="#e2e8f0" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <!-- Backbone sequence chords -->
+    <line x1="390.6" y1="151.7" x2="298.0" y2="262.0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="298.0" y1="262.0" x2="205.4" y2="151.7" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="205.4" y1="151.7" x2="330.1" y2="79.7" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="330.1" y1="79.7" x2="379.4" y2="215.0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="379.4" y1="215.0" x2="237.6" y2="240.0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="237.6" y1="240.0" x2="237.6" y2="96.0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="237.6" y1="96.0" x2="379.4" y2="121.0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="379.4" y1="121.0" x2="330.1" y2="256.3" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="330.1" y1="256.3" x2="205.4" y2="184.3" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="205.4" y1="184.3" x2="298.0" y2="74.0" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="298.0" y1="74.0" x2="390.6" y2="184.3" stroke="#cbd5e1" stroke-width="1.2"/>
+    <line x1="390.6" y1="184.3" x2="265.9" y2="256.3" stroke="#cbd5e1" stroke-width="1.2"/>
+    <!-- Center hub -->
+    <circle cx="298" cy="168" r="42" fill="#f8fafd" stroke="#cbd5e1" stroke-width="1.4"/>
+    <text x="298" y="164" text-anchor="middle" class="hw-sans" font-size="14" font-weight="700" fill="#0f172a">Helix 3</text>
+    <text x="298" y="182" text-anchor="middle" class="hw-mono" font-size="12" fill="#475569">36 to 48</text>
+
+    <!-- Radial (dx, dy, dz) arrows -->
+    <line x1="407.3" y1="148.7" x2="419.1" y2="146.6" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="298.0" y1="279.0" x2="298.0" y2="291.0" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="188.7" y1="148.7" x2="166.0" y2="144.7" stroke="#1a73e8" stroke-width="2.6" marker-end="url(#hw-arrow-blue)"/>
+    <line x1="336.0" y1="63.7" x2="340.1" y2="52.4" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="394.1" y1="223.5" x2="404.5" y2="229.5" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="226.7" y1="253.0" x2="211.9" y2="270.6" stroke="#1a73e8" stroke-width="2.6" marker-end="url(#hw-arrow-blue)"/>
+    <line x1="226.7" y1="83.0" x2="211.9" y2="65.4" stroke="#1a73e8" stroke-width="2.6" marker-end="url(#hw-arrow-blue)"/>
+    <line x1="394.1" y1="112.5" x2="404.5" y2="106.5" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="336.0" y1="272.3" x2="340.1" y2="283.6" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="188.7" y1="187.3" x2="166.0" y2="191.3" stroke="#1a73e8" stroke-width="2.6" marker-end="url(#hw-arrow-blue)"/>
+    <line x1="298.0" y1="57.0" x2="298.0" y2="45.0" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="407.3" y1="187.3" x2="419.1" y2="189.4" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <line x1="260.0" y1="272.3" x2="255.9" y2="283.6" stroke="#0d9488" stroke-width="1.7" marker-end="url(#hw-arrow-teal)"/>
+    <!-- Residue circles -->
+    <circle cx="390.6" cy="151.7" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="390.6" y="155.9" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">D36</text>
+    <circle cx="298.0" cy="262.0" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="298.0" y="266.2" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">E37</text>
+    <circle cx="205.4" cy="151.7" r="16" fill="#1a73e8" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="205.4" y="155.9" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#ffffff">L38</text>
+    <circle cx="330.1" cy="79.7" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="330.1" y="83.9" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">R39</text>
+    <circle cx="379.4" cy="215.0" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="379.4" y="219.2" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">K40</text>
+    <circle cx="237.6" cy="240.0" r="16" fill="#1a73e8" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="237.6" y="244.2" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#ffffff">L41</text>
+    <circle cx="237.6" cy="96.0" r="16" fill="#1a73e8" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="237.6" y="100.2" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#ffffff">I42</text>
+    <circle cx="379.4" cy="121.0" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="379.4" y="125.2" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">E43</text>
+    <circle cx="330.1" cy="256.3" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="330.1" y="260.5" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">E44</text>
+    <circle cx="205.4" cy="184.3" r="16" fill="#1a73e8" stroke="#ffffff" stroke-width="1.8"/>
+    <text x="205.4" y="188.5" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#ffffff">L45</text>
+    <circle cx="298.0" cy="74.0" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="298.0" y="78.2" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">A46</text>
+    <circle cx="390.6" cy="184.3" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="390.6" y="188.5" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">K47</text>
+    <circle cx="265.9" cy="256.3" r="16" fill="#f0fdfa" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="265.9" y="260.5" text-anchor="middle" class="hw-mono" font-size="12" font-weight="700" fill="#0f766e">K48</text>
+
+    <!-- Bottom legend -->
+    <circle cx="24" cy="303" r="5.5" fill="#1a73e8"/>
+    <text x="36" y="307" class="hw-mono" font-size="12" font-weight="700" fill="#1e40af">Core: L38, L41, I42, L45</text>
+    <text x="546" y="307" text-anchor="end" class="hw-mono" font-size="12" fill="#475569">RFD4 native: A38, M41, I42, I45</text>
+  </g>
+
+  <!-- Right Panel: Phased 3D design versus unphased 1D repeat -->
+  <g transform="translate(594, 48)">
+    <rect width="348" height="318" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="348" height="4" rx="2" fill="#0d9488"/>
+    <text x="16" y="26" class="hw-sans" font-size="15" font-weight="700" fill="#0f172a">Phased 3D design versus</text>
+    <text x="16" y="45" class="hw-sans" font-size="15" font-weight="700" fill="#0f172a">unphased 1D repeat</text>
+
+    <!-- Card 1: Gemini 4 Carbon High -->
+    <rect x="16" y="58" width="316" height="118" rx="10" fill="#f8fafd" stroke="#93c5fd" stroke-width="1.3"/>
+    <rect x="16" y="58" width="5" height="118" rx="2.5" fill="#1a73e8"/>
+    <text x="30" y="82" class="hw-sans" font-size="14.5" font-weight="700" fill="#0f172a">Gemini 4 Carbon High</text>
+    <rect x="236" y="65" width="88" height="24" rx="12" fill="#dbeafe"/>
+    <text x="280" y="81" text-anchor="middle" class="hw-mono" font-size="12.5" font-weight="700" fill="#1a73e8">50.0 / 100</text>
+    <text x="30" y="108" class="hw-mono" font-size="13" font-weight="700" fill="#1e40af">2.12 Å RMSD · Contact F1 = 0.43</text>
+    <text x="30" y="136" class="hw-sans" font-size="13.5" fill="#1e293b">Hydrophobic Leu and Ile match</text>
+    <text x="30" y="156" class="hw-sans" font-size="13.5" fill="#1e293b">all 4 inward core vectors.</text>
+
+    <!-- Card 2: Local H/E/C rule -->
+    <rect x="16" y="188" width="316" height="118" rx="10" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.3"/>
+    <rect x="16" y="188" width="5" height="118" rx="2.5" fill="#d97706"/>
+    <text x="30" y="212" class="hw-sans" font-size="14.5" font-weight="700" fill="#0f172a">Local H/E/C rule</text>
+    <rect x="236" y="195" width="88" height="24" rx="12" fill="#fef3c7"/>
+    <text x="280" y="211" text-anchor="middle" class="hw-mono" font-size="12.5" font-weight="700" fill="#b45309">15.3 / 100</text>
+    <text x="30" y="238" class="hw-mono" font-size="13" font-weight="700" fill="#b45309">12.57 Å RMSD · Contact F1 = 0.08</text>
+    <text x="30" y="266" class="hw-sans" font-size="13.5" fill="#1e293b">Unphased EALAK repeat puts</text>
+    <text x="30" y="286" class="hw-sans" font-size="13.5" fill="#1e293b">charged Glu and Lys into core.</text>
+  </g>
+</svg>

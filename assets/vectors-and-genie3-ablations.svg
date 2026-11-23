@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 365" width="960" height="365" role="img" aria-label="Side-chain vector ablation and fresh Genie 3 pure-C-alpha pairs" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .vr-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .vr-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+    </style>
+    <linearGradient id="vr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="363" rx="16" fill="url(#vr-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="20" y="31" class="vr-sans" font-size="18" font-weight="700" fill="#0f172a">Side-chain vector ablation and fresh Genie 3 pure-Cα pairs</text>
+  <text x="20" y="50" class="vr-sans" font-size="12.5" fill="#475569">60 matched evaluations across 6 frontier models comparing orientation vectors (dx, dy, dz) and pure-Cα backbones</text>
+
+  <!-- Left Panel: Stage 1 Vectors minus Pure-Ca -->
+  <g transform="translate(18, 60)">
+    <rect width="454" height="294" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="454" height="4" rx="2" fill="#1a73e8"/>
+    <text x="14" y="27" class="vr-sans" font-size="14.5" font-weight="700" fill="#0f172a">Stage 1 Vectors minus Pure-Cα point gain (4 pairs)</text>
+    <rect x="14" y="38" width="426" height="24" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="227" y="54" text-anchor="middle" class="vr-sans" font-size="12" font-weight="600" fill="#1e40af">Positive = side-chain vectors (dx, dy, dz) improve fit</text>
+
+    <line x1="170.0" y1="82" x2="170.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="170.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">-20</text>
+    <line x1="204.0" y1="82" x2="204.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="204.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">-10</text>
+    <line x1="238.0" y1="82" x2="238.0" y2="274" stroke="#475569" stroke-width="1.5"/>
+    <text x="238.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">0</text>
+    <line x1="272.0" y1="82" x2="272.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="272.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">+10</text>
+    <line x1="306.0" y1="82" x2="306.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="306.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">+20</text>
+    <line x1="170" y1="274" x2="323" y2="274" stroke="#94a3b8" stroke-width="1.2"/>
+
+    <text x="162" y="108" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">Gemini 4 Carbon High</text>
+    <rect x="238.0" y="95" width="68.3" height="18" rx="4" fill="#1a73e8"/>
+    <text x="312.3" y="108" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">+20.08</text>
+    <text x="162" y="146" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">Gemini 4 Neon High</text>
+    <rect x="238.0" y="133" width="64.8" height="18" rx="4" fill="#1a73e8"/>
+    <text x="308.8" y="146" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">+19.05</text>
+    <text x="162" y="184" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">GPT-6.2 Astra High</text>
+    <rect x="238.0" y="171" width="14.9" height="18" rx="4" fill="#0d9488"/>
+    <text x="258.9" y="184" class="vr-mono" font-size="12" font-weight="700" fill="#0f766e">+4.37</text>
+    <text x="162" y="222" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">All 6 models (mean)</text>
+    <rect x="238.0" y="209" width="5.2" height="18" rx="4" fill="#7c3aed"/>
+    <text x="249.2" y="222" class="vr-mono" font-size="12" font-weight="700" fill="#6d28d9">+1.51</text>
+    <text x="162" y="260" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">GPT-6.2 Sol High</text>
+    <rect x="186.6" y="247" width="51.4" height="18" rx="4" fill="#d97706"/>
+    <text x="246.0" y="260" class="vr-mono" font-size="12" font-weight="700" fill="#b45309">-15.13</text>
+  </g>
+
+  <!-- Right Panel: Genie 3 pure-Ca pairs -->
+  <g transform="translate(488, 60)">
+    <rect width="454" height="294" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="454" height="4" rx="2" fill="#0d9488"/>
+    <text x="14" y="27" class="vr-sans" font-size="14.5" font-weight="700" fill="#0f172a">Fresh Genie 3 pure-Cα helical twin pairs (v4.3)</text>
+
+    <!-- Legend -->
+    <rect x="14" y="40" width="11" height="11" rx="2.5" fill="#1a73e8"/>
+    <text x="30" y="50" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">80 aa (G3-P01)</text>
+    <rect x="160" y="40" width="11" height="11" rx="2.5" fill="#0d9488"/>
+    <text x="176" y="50" class="vr-mono" font-size="12" font-weight="700" fill="#0f766e">112 aa (G3-P02)</text>
+
+    <line x1="174.0" y1="70" x2="174.0" y2="274" stroke="#94a3b8" stroke-width="1.1"/>
+    <text x="174.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">0</text>
+    <line x1="224.0" y1="70" x2="224.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="224.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">25</text>
+    <line x1="274.0" y1="70" x2="274.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="274.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">50</text>
+    <line x1="324.0" y1="70" x2="324.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="324.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">75</text>
+    <line x1="374.0" y1="70" x2="374.0" y2="274" stroke="#e2e8f0" stroke-width="1.1" stroke-dasharray="3 3"/>
+    <text x="374.0" y="289" text-anchor="middle" class="vr-mono" font-size="12" font-weight="600" fill="#475569">100</text>
+    <line x1="174" y1="274" x2="374" y2="274" stroke="#94a3b8" stroke-width="1.2"/>
+
+    <text x="166" y="89" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#334155">Cα-ProteinMPNN</text>
+    <rect x="174.0" y="76" width="186.1" height="11" rx="3" fill="#1a73e8"/>
+    <text x="366.1" y="85.5" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">93.06</text>
+    <rect x="174.0" y="89" width="182.2" height="11" rx="3" fill="#0d9488"/>
+    <text x="362.2" y="98.5" class="vr-mono" font-size="12" font-weight="600" fill="#0f766e">91.08</text>
+    <text x="166" y="122" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">Gemini 4 Carbon High</text>
+    <rect x="174.0" y="109" width="138.7" height="11" rx="3" fill="#1a73e8"/>
+    <text x="318.7" y="118.5" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">69.37</text>
+    <rect x="174.0" y="122" width="103.2" height="11" rx="3" fill="#0d9488"/>
+    <text x="283.2" y="131.5" class="vr-mono" font-size="12" font-weight="600" fill="#0f766e">51.60</text>
+    <text x="166" y="155" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">Gemini 4 Neon High</text>
+    <rect x="174.0" y="142" width="118.1" height="11" rx="3" fill="#1a73e8"/>
+    <text x="298.1" y="151.5" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">59.03</text>
+    <rect x="174.0" y="155" width="109.6" height="11" rx="3" fill="#0d9488"/>
+    <text x="289.6" y="164.5" class="vr-mono" font-size="12" font-weight="600" fill="#0f766e">54.80</text>
+    <text x="166" y="188" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">GPT-6.2 Sol High</text>
+    <rect x="174.0" y="175" width="91.9" height="11" rx="3" fill="#1a73e8"/>
+    <text x="271.9" y="184.5" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">45.96</text>
+    <rect x="174.0" y="188" width="60.0" height="11" rx="3" fill="#0d9488"/>
+    <text x="240.0" y="197.5" class="vr-mono" font-size="12" font-weight="600" fill="#0f766e">30.02</text>
+    <text x="166" y="221" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#0f172a">GPT-6.2 Astra High</text>
+    <rect x="174.0" y="208" width="83.3" height="11" rx="3" fill="#1a73e8"/>
+    <text x="263.3" y="217.5" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">41.65</text>
+    <rect x="174.0" y="221" width="44.1" height="11" rx="3" fill="#0d9488"/>
+    <text x="224.1" y="230.5" class="vr-mono" font-size="12" font-weight="600" fill="#0f766e">22.07</text>
+    <text x="166" y="254" text-anchor="end" class="vr-sans" font-size="12.5" font-weight="700" fill="#64748b">Composition shuffle</text>
+    <rect x="174.0" y="241" width="19.5" height="11" rx="3" fill="#1a73e8"/>
+    <text x="199.5" y="250.5" class="vr-mono" font-size="12" font-weight="700" fill="#1e40af">9.77</text>
+    <rect x="174.0" y="254" width="18.7" height="11" rx="3" fill="#0d9488"/>
+    <text x="198.7" y="263.5" class="vr-mono" font-size="12" font-weight="600" fill="#0f766e">9.35</text>
+  </g>
+</svg>

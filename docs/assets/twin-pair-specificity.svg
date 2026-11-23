@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-label="How the Matched Twin Decoy Test works and what Twin Delta measures" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .tw-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .tw-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+    </style>
+    <marker id="tw-arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#64748b"/>
+    </marker>
+    <linearGradient id="tw-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="398" rx="16" fill="url(#tw-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Main Header -->
+  <text x="20" y="31" class="tw-sans" font-size="18" font-weight="700" fill="#0f172a">How the Matched Twin Decoy Test works and what Twin Δ measures</text>
+  <text x="20" y="51" class="tw-sans" font-size="12.5" fill="#475569">One model sequence is folded once and scored against both its assigned 3D target A and a withheld 1D-matched twin B</text>
+
+  <!-- Left Panel: 1D similarity vs 3D difference -->
+  <g transform="translate(18, 62)">
+    <rect width="452" height="324" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="452" height="4" rx="2" fill="#1a73e8"/>
+    <text x="16" y="27" class="tw-sans" font-size="15" font-weight="700" fill="#0f172a">1. Same 1D schedule, different 3D folds</text>
+
+    <!-- Shared 1D schedule bar -->
+    <text x="16" y="49" class="tw-sans" font-size="12" font-weight="600" fill="#475569">Same length N and H/E/C schedule</text>
+    <text x="436" y="49" text-anchor="end" class="tw-mono" font-size="12" font-weight="700" fill="#1a73e8">&gt;= 70% (66.5% S2 beta)</text>
+
+    <rect x="16" y="56" width="96" height="24" rx="5" fill="#dbeafe" stroke="#60a5fa"/>
+    <text x="64" y="72" text-anchor="middle" class="tw-mono" font-size="12.5" font-weight="700" fill="#1e40af">H1</text>
+    <rect x="116" y="56" width="52" height="24" rx="5" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="142" y="72" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#475569">turn</text>
+    <rect x="172" y="56" width="98" height="24" rx="5" fill="#dbeafe" stroke="#60a5fa"/>
+    <text x="221" y="72" text-anchor="middle" class="tw-mono" font-size="12.5" font-weight="700" fill="#1e40af">H2</text>
+    <rect x="274" y="56" width="52" height="24" rx="5" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="300" y="72" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#475569">turn</text>
+    <rect x="330" y="56" width="106" height="24" rx="5" fill="#dbeafe" stroke="#60a5fa"/>
+    <text x="383" y="72" text-anchor="middle" class="tw-mono" font-size="12.5" font-weight="700" fill="#1e40af">H3</text>
+
+    <!-- Branch arrows -->
+    <path d="M 226,80 L 226,91 L 96,91 L 96,100" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#tw-arrow)"/>
+    <path d="M 226,91 L 356,91 L 356,100" fill="none" stroke="#64748b" stroke-width="1.8" marker-end="url(#tw-arrow)"/>
+
+    <!-- Assigned Target A -->
+    <rect x="16" y="105" width="162" height="142" rx="10" fill="#f8fafd" stroke="#93c5fd" stroke-width="1.4"/>
+    <text x="97" y="124" text-anchor="middle" class="tw-sans" font-size="13" font-weight="700" fill="#1e40af">Assigned Target A</text>
+    <rect x="40" y="131" width="114" height="20" rx="10" fill="#dbeafe"/>
+    <text x="97" y="145" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#1d4ed8">Sent in prompt</text>
+    <!-- Parallel 3-helix bundle cartoon -->
+    <path d="M 60,224 Q 78,236 96,224" fill="none" stroke="#64748b" stroke-width="2"/>
+    <path d="M 96,170 Q 114,158 132,170" fill="none" stroke="#64748b" stroke-width="2"/>
+    <rect x="52" y="168" width="16" height="58" rx="8" fill="#1a73e8"/>
+    <rect x="88" y="168" width="16" height="58" rx="8" fill="#3b82f6"/>
+    <rect x="124" y="168" width="16" height="58" rx="8" fill="#1a73e8"/>
+
+    <!-- Center separation badge -->
+    <rect x="186" y="114" width="80" height="124" rx="9" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.2"/>
+    <text x="226" y="135" text-anchor="middle" class="tw-sans" font-size="12" font-weight="700" fill="#92400e">3D gap</text>
+    <text x="226" y="158" text-anchor="middle" class="tw-mono" font-size="13" font-weight="700" fill="#b45309">&gt;= 3.0 Å</text>
+    <text x="226" y="174" text-anchor="middle" class="tw-sans" font-size="12" fill="#78350f">Stage 1</text>
+    <line x1="198" y1="184" x2="254" y2="184" stroke="#fde68a" stroke-width="1.2"/>
+    <text x="226" y="205" text-anchor="middle" class="tw-mono" font-size="13" font-weight="700" fill="#6d28d9">&gt;= 5.0 Å</text>
+    <text x="226" y="221" text-anchor="middle" class="tw-sans" font-size="12" fill="#5b21b6">Stage 2</text>
+
+    <!-- Hidden Decoy Twin B -->
+    <rect x="274" y="105" width="162" height="142" rx="10" fill="#f0fdfa" stroke="#5eead4" stroke-width="1.4"/>
+    <text x="355" y="124" text-anchor="middle" class="tw-sans" font-size="13" font-weight="700" fill="#0f766e">Hidden Decoy Twin B</text>
+    <rect x="302" y="131" width="106" height="20" rx="10" fill="#ccfbf1"/>
+    <text x="355" y="145" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#0f766e">Withheld</text>
+    <!-- Crossed / orthogonal 3-helix bundle cartoon -->
+    <line x1="312" y1="224" x2="394" y2="176" stroke="#14b8a6" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 312,174 Q 296,199 312,224" fill="none" stroke="#64748b" stroke-width="2"/>
+    <path d="M 394,176 Q 406,176 406,192" fill="none" stroke="#64748b" stroke-width="2"/>
+    <rect x="308" y="166" width="60" height="15" rx="7.5" fill="#0f766e" stroke="#f0fdfa" stroke-width="1.5"/>
+    <rect x="398" y="182" width="16" height="46" rx="8" fill="#0d9488" stroke="#f0fdfa" stroke-width="1.5"/>
+
+    <!-- Concrete 3D difference caption -->
+    <rect x="16" y="258" width="198" height="50" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+    <text x="115" y="278" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#1e40af">Target A contacts</text>
+    <text x="115" y="296" text-anchor="middle" class="tw-sans" font-size="12" fill="#334155">Parallel H1-H2-H3 core</text>
+    <rect x="238" y="258" width="198" height="50" rx="8" fill="#f0fdfa" stroke="#99f6e4"/>
+    <text x="337" y="278" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#0f766e">Twin B contacts</text>
+    <text x="337" y="296" text-anchor="middle" class="tw-sans" font-size="12" fill="#334155">Crossed H1-H3 interface</text>
+  </g>
+
+  <!-- Right Panel: Twin Delta measurement -->
+  <g transform="translate(486, 62)">
+    <rect width="456" height="324" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="456" height="4" rx="2" fill="#7c3aed"/>
+    <text x="18" y="27" class="tw-sans" font-size="15" font-weight="700" fill="#0f172a">2. Fold once, score against both shapes</text>
+
+    <!-- Formula box -->
+    <rect x="18" y="38" width="420" height="30" rx="8" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <text x="228" y="57" text-anchor="middle" class="tw-mono" font-size="13" font-weight="700" fill="#0f172a">
+      Twin Δ = <tspan fill="#1a73e8">Fit(Shape A)</tspan> − <tspan fill="#0d9488">Fit(Decoy Twin B)</tspan>
+    </text>
+
+    <!-- Inline legend -->
+    <rect x="18" y="76" width="11" height="11" rx="2.5" fill="#1a73e8"/>
+    <text x="34" y="86" class="tw-sans" font-size="12" font-weight="600" fill="#1e293b">Shape A (assigned)</text>
+    <rect x="172" y="76" width="11" height="11" rx="2.5" fill="#0d9488"/>
+    <text x="188" y="86" class="tw-sans" font-size="12" font-weight="600" fill="#1e293b">Twin B (withheld decoy)</text>
+
+    <text x="18" y="112" class="tw-sans" font-size="13" font-weight="700" fill="#0f172a">1D Local H/E/C rule <tspan font-size="12" font-weight="400" fill="#64748b">(no 3D packing)</tspan></text>
+    <rect x="292" y="97" width="144" height="22" rx="11" fill="#fef3c7" stroke="#fcd34d" stroke-width="1.1"/>
+    <text x="364" y="112" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#b45309">Twin Δ = +1.5</text>
+    <rect x="18" y="119" width="34.2" height="12" rx="3" fill="#1a73e8"/>
+    <text x="58.2" y="129" class="tw-mono" font-size="12" font-weight="700" fill="#1e40af">17.1 on A</text>
+    <rect x="18" y="134" width="31.2" height="12" rx="3" fill="#0d9488"/>
+    <text x="55.2" y="144" class="tw-mono" font-size="12" font-weight="600" fill="#0f766e">15.6 on B</text>
+    <text x="18" y="161" class="tw-sans" font-size="12" fill="#475569">Near zero: guesses 1D helices, ignores 3D fold</text>
+    <line x1="18" y1="169" x2="438" y2="169" stroke="#f1f5f9" stroke-width="1.2"/>
+    <text x="18" y="179" class="tw-sans" font-size="13" font-weight="700" fill="#0f172a">Gemini 4 Carbon High <tspan font-size="12" font-weight="400" fill="#64748b">(zero-tool LLM)</tspan></text>
+    <rect x="292" y="164" width="144" height="22" rx="11" fill="#dbeafe" stroke="#93c5fd" stroke-width="1.1"/>
+    <text x="364" y="179" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#1e40af">Twin Δ = +37.8</text>
+    <rect x="18" y="186" width="114.0" height="12" rx="3" fill="#1a73e8"/>
+    <text x="138.0" y="196" class="tw-mono" font-size="12" font-weight="700" fill="#1e40af">57.0 on A</text>
+    <rect x="18" y="201" width="38.4" height="12" rx="3" fill="#0d9488"/>
+    <text x="62.4" y="211" class="tw-mono" font-size="12" font-weight="600" fill="#0f766e">19.2 on B</text>
+    <text x="18" y="228" class="tw-sans" font-size="12" fill="#475569">Strong positive: encodes Shape A's specific 3D fold</text>
+    <line x1="18" y1="236" x2="438" y2="236" stroke="#f1f5f9" stroke-width="1.2"/>
+    <text x="18" y="246" class="tw-sans" font-size="13" font-weight="700" fill="#0f172a">Cα-ProteinMPNN <tspan font-size="12" font-weight="400" fill="#64748b">(specialist ceiling)</tspan></text>
+    <rect x="292" y="231" width="144" height="22" rx="11" fill="#f3e8ff" stroke="#c4b5fd" stroke-width="1.1"/>
+    <text x="364" y="246" text-anchor="middle" class="tw-mono" font-size="12" font-weight="700" fill="#6d28d9">Twin Δ = +69.3</text>
+    <rect x="18" y="253" width="183.4" height="12" rx="3" fill="#1a73e8"/>
+    <text x="207.4" y="263" class="tw-mono" font-size="12" font-weight="700" fill="#1e40af">91.7 on A</text>
+    <rect x="18" y="268" width="44.8" height="12" rx="3" fill="#0d9488"/>
+    <text x="68.8" y="278" class="tw-mono" font-size="12" font-weight="600" fill="#0f766e">22.4 on B</text>
+    <text x="18" y="295" class="tw-sans" font-size="12" fill="#475569">Specialist reference: high 3D fold specificity</text>
+  </g>
+</svg>

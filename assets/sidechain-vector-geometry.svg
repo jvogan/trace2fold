@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" width="960" height="340" role="img" aria-label="What virtual side-chain vectors (dx, dy, dz) add beyond C-alpha coordinates" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .va-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .va-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+    </style>
+    <marker id="va-arrow-blue" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#1a73e8"/>
+    </marker>
+    <marker id="va-arrow-teal" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#0d9488"/>
+    </marker>
+    <marker id="va-arrow-amber" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#d97706"/>
+    </marker>
+    <linearGradient id="va-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="338" rx="16" fill="url(#va-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Main Title -->
+  <text x="20" y="33" class="va-sans" font-size="18" font-weight="700" fill="#0f172a">What virtual side-chain vectors (dx, dy, dz) add beyond Cα coordinates</text>
+
+  <!-- Left Panel: Pure-Cα input -->
+  <g transform="translate(18, 48)">
+    <rect width="452" height="276" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="452" height="4" rx="2" fill="#d97706"/>
+    <text x="16" y="28" class="va-sans" font-size="15" font-weight="700" fill="#0f172a">Pure-Cα input (x, y, z only)</text>
+    <rect x="304" y="12" width="134" height="22" rx="11" fill="#fef3c7" stroke="#fcd34d"/>
+    <text x="371" y="27" text-anchor="middle" class="va-mono" font-size="12" font-weight="700" fill="#b45309">36-call ablation</text>
+
+    <!-- Shaded Buried Core Zone -->
+    <path d="M 16,52 L 122,52 Q 142,130 122,204 L 16,204 Z" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.3" stroke-dasharray="5 3"/>
+    <text x="72" y="118" text-anchor="middle" class="va-sans" font-size="14" font-weight="700" fill="#1e40af">Buried</text>
+    <text x="72" y="136" text-anchor="middle" class="va-sans" font-size="14" font-weight="700" fill="#1e40af">core</text>
+
+    <!-- Shaded Water Zone -->
+    <path d="M 332,52 L 436,52 L 436,204 L 332,204 Q 312,130 332,52 Z" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.3" stroke-dasharray="5 3"/>
+    <text x="386" y="128" text-anchor="middle" class="va-sans" font-size="14" font-weight="700" fill="#0f766e">Water</text>
+
+    <!-- Center helix cross-section -->
+    <g transform="translate(0, -44)">
+      <!-- Rotation unknown label cleanly above the top arc -->
+      <text x="226" y="104" text-anchor="middle" class="va-sans" font-size="12.5" font-weight="700" fill="#b45309">Rotation unknown</text>
+      <!-- Rotation ambiguity arcs (r=54, well clear of text) -->
+      <path d="M 188,136 A 56,56 0 0,1 264,136" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#va-arrow-amber)"/>
+      <path d="M 264,224 A 56,56 0 0,1 188,224" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#va-arrow-amber)"/>
+
+      <circle cx="226" cy="180" r="42" fill="#f8fafd" stroke="#475569" stroke-width="2"/>
+      <text x="226" y="177" text-anchor="middle" class="va-mono" font-size="12.5" font-weight="700" fill="#0f172a">Cα trace</text>
+      <text x="226" y="193" text-anchor="middle" class="va-sans" font-size="12" fill="#475569">fixed</text>
+    <line x1="276.0" y1="180.0" x2="299.0" y2="180.0" stroke="#d97706" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#va-arrow-amber)"/>
+    <line x1="260.0" y1="180.0" x2="253.0" y2="180.0" stroke="#d97706" stroke-width="1.8" stroke-dasharray="3 2" marker-end="url(#va-arrow-amber)"/>
+    <line x1="176.0" y1="180.0" x2="153.0" y2="180.0" stroke="#d97706" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#va-arrow-amber)"/>
+    <line x1="192.0" y1="180.0" x2="199.0" y2="180.0" stroke="#d97706" stroke-width="1.8" stroke-dasharray="3 2" marker-end="url(#va-arrow-amber)"/>
+    <circle cx="268.0" cy="180.0" r="6.5" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+    <circle cx="247.0" cy="216.4" r="6.5" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+    <circle cx="205.0" cy="216.4" r="6.5" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+    <circle cx="184.0" cy="180.0" r="6.5" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+    <circle cx="205.0" cy="143.6" r="6.5" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+    <circle cx="247.0" cy="143.6" r="6.5" fill="#ffffff" stroke="#334155" stroke-width="2"/>
+      <!-- Ambiguous ? markers -->
+      <text x="150" y="166" text-anchor="middle" class="va-sans" font-size="15" font-weight="700" fill="#d97706">?</text>
+      <text x="302" y="166" text-anchor="middle" class="va-sans" font-size="15" font-weight="700" fill="#d97706">?</text>
+    </g>
+
+    <!-- Bottom explanation -->
+    <text x="16" y="234" class="va-sans" font-size="13.5" fill="#1e293b">Cα trace positions stay fixed, yet axial rotation is ambiguous.</text>
+    <text x="16" y="256" class="va-sans" font-size="13.5" fill="#475569">Tested in the 36-call XYZ-only ablation.</text>
+  </g>
+
+  <!-- Right Panel: Primary input -->
+  <g transform="translate(490, 48)">
+    <rect width="452" height="276" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="452" height="4" rx="2" fill="#1a73e8"/>
+    <text x="16" y="28" class="va-sans" font-size="15" font-weight="700" fill="#0f172a">Primary input (Cα + N-Cα-C unit vector)</text>
+
+    <!-- Mini backbone N-Cα-C vector diagram -->
+    <rect x="14" y="44" width="154" height="166" rx="9" fill="#f8fafd" stroke="#cbd5e1" stroke-width="1.2"/>
+    <text x="91" y="63" text-anchor="middle" class="va-sans" font-size="12.5" font-weight="700" fill="#0f172a">Backbone N-Cα-C</text>
+
+    <!-- Covalent bonds -->
+    <line x1="46" y1="88" x2="91" y2="112" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+    <line x1="91" y1="112" x2="136" y2="88" stroke="#334155" stroke-width="3" stroke-linecap="round"/>
+    <!-- Unit vector arrow (dx, dy, dz) -->
+    <line x1="91" y1="124" x2="91" y2="163" stroke="#1a73e8" stroke-width="3.2" marker-end="url(#va-arrow-blue)"/>
+    <!-- Atoms -->
+    <circle cx="46" cy="88" r="13" fill="#2563eb"/>
+    <text x="46" y="92" text-anchor="middle" class="va-mono" font-size="12" font-weight="700" fill="#ffffff">N</text>
+    <circle cx="91" cy="112" r="14" fill="#0f172a"/>
+    <text x="91" y="116" text-anchor="middle" class="va-mono" font-size="12" font-weight="700" fill="#ffffff">Cα</text>
+    <circle cx="136" cy="88" r="13" fill="#475569"/>
+    <text x="136" y="92" text-anchor="middle" class="va-mono" font-size="12" font-weight="700" fill="#ffffff">C</text>
+    <text x="91" y="182" text-anchor="middle" class="va-mono" font-size="12.5" font-weight="700" fill="#1a73e8">(dx, dy, dz)</text>
+    <text x="91" y="199" text-anchor="middle" class="va-sans" font-size="12" fill="#475569">Virtual Cβ unit arrow</text>
+
+    <!-- Resolved cross-section on right side -->
+    <!-- Top labels for core and water -->
+    <text x="180" y="59" class="va-sans" font-size="12.5" font-weight="700" fill="#1e40af">Hydrophobic core</text>
+    <text x="180" y="75" class="va-mono" font-size="12" fill="#2563eb">Leu, Ile, Val</text>
+
+    <text x="438" y="59" text-anchor="end" class="va-sans" font-size="12.5" font-weight="700" fill="#0f766e">Water</text>
+    <text x="438" y="75" text-anchor="end" class="va-mono" font-size="12" fill="#0d9488">Lys, Glu, Arg</text>
+
+    <!-- Core & Water zones -->
+    <rect x="180" y="84" width="70" height="122" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <rect x="370" y="84" width="68" height="122" rx="8" fill="#f0fdfa" stroke="#99f6e4" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+    <!-- Resolved helix circle + directional arrows -->
+    <g transform="translate(0, -44)">
+      <circle cx="310" cy="188" r="36" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+      <text x="310" y="192" text-anchor="middle" class="va-sans" font-size="13" font-weight="700" fill="#0f172a">Helix</text>
+    <line x1="273.5" y1="210.8" x2="250.6" y2="225.1" stroke="#1a73e8" stroke-width="2.6" marker-end="url(#va-arrow-blue)"/>
+    <circle cx="279.5" cy="207.1" r="6.5" fill="#1a73e8" stroke="#ffffff" stroke-width="1.8"/>
+    <line x1="267.0" y1="188.0" x2="240.0" y2="188.0" stroke="#1a73e8" stroke-width="2.6" marker-end="url(#va-arrow-blue)"/>
+    <circle cx="274.0" cy="188.0" r="6.5" fill="#1a73e8" stroke="#ffffff" stroke-width="1.8"/>
+    <line x1="273.5" y1="165.2" x2="250.6" y2="150.9" stroke="#1a73e8" stroke-width="2.6" marker-end="url(#va-arrow-blue)"/>
+    <circle cx="279.5" cy="168.9" r="6.5" fill="#1a73e8" stroke="#ffffff" stroke-width="1.8"/>
+    <line x1="344.8" y1="162.7" x2="365.0" y2="148.0" stroke="#0d9488" stroke-width="2.2" marker-end="url(#va-arrow-teal)"/>
+    <circle cx="339.1" cy="166.8" r="6.5" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+    <line x1="352.1" y1="179.1" x2="376.5" y2="173.9" stroke="#0d9488" stroke-width="2.2" marker-end="url(#va-arrow-teal)"/>
+    <circle cx="345.2" cy="180.5" r="6.5" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+    <line x1="352.1" y1="196.9" x2="376.5" y2="202.1" stroke="#0d9488" stroke-width="2.2" marker-end="url(#va-arrow-teal)"/>
+    <circle cx="345.2" cy="195.5" r="6.5" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+    <line x1="344.8" y1="213.3" x2="365.0" y2="228.0" stroke="#0d9488" stroke-width="2.2" marker-end="url(#va-arrow-teal)"/>
+    <circle cx="339.1" cy="209.2" r="6.5" fill="#f0fdfa" stroke="#0f766e" stroke-width="2"/>
+    </g>
+
+    <!-- Bottom explanation -->
+    <text x="16" y="234" class="va-sans" font-size="13.5" fill="#1e293b">Blue arrows point into the core; teal arrows point into water.</text>
+    <text x="16" y="256" class="va-sans" font-size="13.5" fill="#475569">Gives side-chain direction without revealing side-chain size.</text>
+  </g>
+</svg>

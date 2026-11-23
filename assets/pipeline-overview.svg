@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" width="960" height="350" role="img" aria-label="Five steps in one Trace2Fold trial" style="max-width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .pa-sans { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+      .pa-mono { font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace; }
+      .pa-flow { stroke-dasharray: 5 4; }
+      @media (prefers-reduced-motion: no-preference) {
+        .pa-flow { animation: pa-dash 1.8s linear infinite; }
+      }
+      @keyframes pa-dash { to { stroke-dashoffset: -18; } }
+    </style>
+    <marker id="pa-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#475569"/>
+    </marker>
+    <linearGradient id="pa-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="958" height="348" rx="16" fill="url(#pa-bg)" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- Main header -->
+  <text x="20" y="33" class="pa-sans" font-size="18" font-weight="700" fill="#0f172a">Five steps in one Trace2Fold trial</text>
+  <rect x="706" y="14" width="236" height="24" rx="12" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="824" y="30" text-anchor="middle" class="pa-mono" font-size="12" font-weight="600" fill="#475569">0 tools · 1 turn · 2 predictors</text>
+
+  <!-- Step 01: Anonymous 3D shape -->
+  <g transform="translate(18, 48)">
+    <rect width="368" height="134" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="368" height="4" rx="2" fill="#1a73e8"/>
+    <rect x="12" y="12" width="28" height="21" rx="6" fill="#e8f0fe"/>
+    <text x="26" y="27" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#1a73e8">01</text>
+    <text x="48" y="28" class="pa-sans" font-size="15" font-weight="700" fill="#0f172a">Anonymous 3D shape</text>
+
+    <!-- 3-helix bundle trace graphic -->
+    <rect x="12" y="42" width="132" height="80" rx="8" fill="#f8fafd" stroke="#dbeafe" stroke-width="1.2"/>
+    <!-- Helix 1 coil -->
+    <path d="M 38,56 C 46,60 30,66 38,71 C 46,76 30,82 38,87 C 46,92 30,98 38,103" fill="none" stroke="#1a73e8" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Loop 1-2 -->
+    <path d="M 38,103 Q 56,116 74,103" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="3 2"/>
+    <!-- Helix 2 coil -->
+    <path d="M 74,103 C 82,98 66,92 74,87 C 82,82 66,76 74,71 C 82,66 66,60 74,56" fill="none" stroke="#1a73e8" stroke-width="2.8" stroke-linecap="round"/>
+    <!-- Loop 2-3 -->
+    <path d="M 74,56 Q 92,44 110,56" fill="none" stroke="#64748b" stroke-width="2" stroke-dasharray="3 2"/>
+    <!-- Helix 3 coil -->
+    <path d="M 110,56 C 118,60 102,66 110,71 C 118,76 102,82 110,87 C 118,92 102,98 110,103" fill="none" stroke="#0d9488" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="38" cy="56" r="4" fill="#1a73e8"/>
+    <circle cx="110" cy="103" r="4" fill="#ffffff" stroke="#0d9488" stroke-width="2.2"/>
+    <text x="24" y="60" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#1e40af">1</text>
+    <text x="128" y="108" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#0f766e">N</text>
+
+    <!-- Text bullets -->
+    <text x="156" y="61" class="pa-sans" font-size="13.5" font-weight="700" fill="#0f172a">RFD4-Proteina or Genie 3</text>
+    <text x="156" y="83" class="pa-sans" font-size="13.5" fill="#1e293b">3-helix trace (1..N)</text>
+    <text x="156" y="104" class="pa-sans" font-size="13.5" fill="#475569">Strip residue sequence</text>
+    <text x="156" y="121" class="pa-sans" font-size="13.5" fill="#475569">and PDB IDs</text>
+  </g>
+
+  <!-- Arrow 01 -> 02 -->
+  <line x1="388" y1="115" x2="408" y2="115" stroke="#475569" stroke-width="2" class="pa-flow" marker-end="url(#pa-arrow)"/>
+
+  <!-- Step 02: Text coordinate table -->
+  <g transform="translate(414, 48)">
+    <rect width="528" height="134" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="528" height="4" rx="2" fill="#0d9488"/>
+    <rect x="12" y="12" width="28" height="21" rx="6" fill="#ccfbf1"/>
+    <text x="26" y="27" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#0f766e">02</text>
+    <text x="48" y="28" class="pa-sans" font-size="15" font-weight="700" fill="#0f172a">Text coordinate table</text>
+
+    <!-- Monospace coordinate block -->
+    <rect x="12" y="40" width="504" height="48" rx="8" fill="#f8fafd" stroke="#cbd5e1" stroke-width="1.1"/>
+    <text x="24" y="60" class="pa-mono" font-size="12.5" font-weight="700" fill="#0f172a">1: (0.00, 0.00, 0.00) dir=(-0.29, 0.10, -0.95)</text>
+    <text x="24" y="79" class="pa-mono" font-size="12.5" fill="#475569">2: (3.85, 0.00, 0.00) dir=( 0.52, -0.80, 0.30)</text>
+
+    <!-- Explanations -->
+    <text x="14" y="108" class="pa-sans" font-size="13.5" fill="#1e293b">
+      <tspan font-weight="700" fill="#0f766e">Cα (x, y, z)</tspan> in Å plus <tspan font-weight="700" fill="#1a73e8">N-Cα-C unit vector (dx, dy, dz)</tspan>
+    </text>
+    <text x="14" y="126" class="pa-sans" font-size="13" fill="#475569">Residues indexed 1..N in one canonical coordinate frame</text>
+  </g>
+
+  <!-- Stepped flow connector 02 -> 03 -->
+  <path d="M 678,182 L 678,193 L 154,193 L 154,200" fill="none" stroke="#475569" stroke-width="2" class="pa-flow" marker-end="url(#pa-arrow)"/>
+
+  <!-- Step 03: One-shot model turn -->
+  <g transform="translate(18, 204)">
+    <rect width="272" height="134" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="272" height="4" rx="2" fill="#7c3aed"/>
+    <rect x="12" y="12" width="28" height="21" rx="6" fill="#f3e8ff"/>
+    <text x="26" y="27" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#6d28d9">03</text>
+    <text x="48" y="28" class="pa-sans" font-size="15" font-weight="700" fill="#0f172a">One-shot model turn</text>
+
+    <rect x="12" y="37" width="248" height="24" rx="6" fill="#f5f3ff" stroke="#ddd6fe"/>
+    <text x="136" y="53" text-anchor="middle" class="pa-mono" font-size="12.5" font-weight="700" fill="#6d28d9">0 tools · 0 examples</text>
+
+    <rect x="12" y="66" width="248" height="26" rx="6" fill="#ffffff" stroke="#c4b5fd" stroke-width="1.2"/>
+    <text x="22" y="84" class="pa-mono" font-size="13" font-weight="700" fill="#0f172a">KTFPQELE...</text>
+    <text x="250" y="83" text-anchor="end" class="pa-mono" font-size="12" fill="#64748b">N letters</text>
+
+    <text x="14" y="109" class="pa-sans" font-size="13" fill="#1e293b">One bare amino-acid string</text>
+    <text x="14" y="124" class="pa-sans" font-size="12.5" fill="#475569">SHA-256 hashed before folding</text>
+  </g>
+
+  <!-- Arrow 03 -> 04 -->
+  <line x1="292" y1="271" x2="306" y2="271" stroke="#475569" stroke-width="2" class="pa-flow" marker-end="url(#pa-arrow)"/>
+
+  <!-- Step 04: Two sequence-only predictors -->
+  <g transform="translate(312, 204)">
+    <rect width="304" height="134" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="304" height="4" rx="2" fill="#d97706"/>
+    <rect x="12" y="12" width="28" height="21" rx="6" fill="#fef3c7"/>
+    <text x="26" y="27" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#b45309">04</text>
+    <text x="48" y="28" class="pa-sans" font-size="15" font-weight="700" fill="#0f172a">Two sequence-only predictors</text>
+
+    <rect x="12" y="37" width="280" height="25" rx="6" fill="#fffbeb" stroke="#fcd34d"/>
+    <text x="22" y="54" class="pa-sans" font-size="13" fill="#78350f"><tspan font-weight="700" fill="#b45309">ESMFold2-Fast</tspan> (language model)</text>
+
+    <rect x="12" y="67" width="280" height="25" rx="6" fill="#fffbeb" stroke="#fcd34d"/>
+    <text x="22" y="84" class="pa-sans" font-size="13" fill="#78350f"><tspan font-weight="700" fill="#b45309">Boltz-2</tspan> (diffusion model)</text>
+
+    <text x="14" y="109" class="pa-mono" font-size="12.5" font-weight="700" fill="#1e293b">msa=empty · templates=false</text>
+    <text x="14" y="124" class="pa-sans" font-size="12.5" fill="#475569">Fold the letters independently</text>
+  </g>
+
+  <!-- Arrow 04 -> 05 -->
+  <line x1="618" y1="271" x2="632" y2="271" stroke="#475569" stroke-width="2" class="pa-flow" marker-end="url(#pa-arrow)"/>
+
+  <!-- Step 05: 3D overlay score (spacefill-v4) -->
+  <g transform="translate(638, 204)">
+    <rect width="304" height="134" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.3"/>
+    <rect x="0" y="0" width="304" height="4" rx="2" fill="#0f172a"/>
+    <rect x="12" y="12" width="28" height="21" rx="6" fill="#e2e8f0"/>
+    <text x="26" y="27" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#0f172a">05</text>
+    <text x="48" y="28" class="pa-sans" font-size="15" font-weight="700" fill="#0f172a">3D overlay (spacefill-v4)</text>
+
+    <!-- Proportional weight bar -->
+    <rect x="12" y="38" width="108" height="24" rx="4" fill="#1a73e8"/>
+    <text x="66" y="54" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#ffffff">Kabsch 40%</text>
+    <rect x="122" y="38" width="78" height="24" rx="4" fill="#0d9488"/>
+    <text x="161" y="54" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#ffffff">lDDT 25%</text>
+    <rect x="202" y="38" width="90" height="24" rx="4" fill="#7c3aed"/>
+    <text x="247" y="54" text-anchor="middle" class="pa-mono" font-size="12" font-weight="700" fill="#ffffff">F1 35%</text>
+
+    <text x="14" y="82" class="pa-sans" font-size="13" fill="#1e293b">Superimpose on target (det = +1)</text>
+    <text x="14" y="102" class="pa-sans" font-size="13" fill="#1e293b">Cα lDDT 25% and contact F1 35%</text>
+    <text x="14" y="122" class="pa-sans" font-size="13.5" font-weight="700" fill="#1a73e8">0 to 100 fit plus twin margin</text>
+  </g>
+</svg>
