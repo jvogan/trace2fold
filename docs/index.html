@@ -20,6 +20,50 @@
 <meta name="twitter:title" content="Trace2Fold - Zero-Tool 3D Inverse Folding Benchmark">
 <meta name="twitter:description" content="Trace2Fold evaluates whether frontier language models can design 3D-refoldable protein sequences from anonymous backbone coordinates in a single turn with zero tools.">
 <meta name="twitter:image" content="https://jvogan.github.io/trace2fold/assets/trace2fold-twin-hero.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://jvogan.github.io/trace2fold/#score-archives",
+  "name": "Trace2Fold Benchmark Score Archives",
+  "description": "Coordinate-free inverse-folding benchmark scores for 14 language model settings and five reference baselines across 24 matched holdout shapes, 48 to 176 residues long. The archives include per-target scores, matched-twin comparisons, and predictor concordance. Holdout coordinates and submitted sequences remain private.",
+  "url": "https://jvogan.github.io/trace2fold/#results",
+  "version": "0.4.0",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "isAccessibleForFree": true,
+  "creator": {
+    "@type": "Person",
+    "name": "Jacob Vogan",
+    "url": "https://github.com/jvogan"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "Stage 1 scores",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/jvogan/trace2fold/v0.4.0/benchmarks/stage-one-scores.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Stage 2 scores",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/jvogan/trace2fold/v0.4.0/benchmarks/stage-two-scores.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "24-shape length scaling",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/jvogan/trace2fold/v0.4.0/benchmarks/length-scaling-24-shapes.json"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "Ablations and predictor concordance",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://raw.githubusercontent.com/jvogan/trace2fold/v0.4.0/benchmarks/variations-and-simplefold.json"
+    }
+  ]
+}
+</script>
 <style>
   :root {
     --bg: #ffffff;
@@ -2974,7 +3018,10 @@ Shuffled       :  9.53 (13.75 Å)</pre>
         <span class="sec-kicker">Benchmark results</span>
         <h2>Holdout leaderboard and interactive analysis</h2>
         <p class="section-sub" style="margin-bottom:0;">
-          Every model designed one amino-acid sequence per 3D backbone across 24 holdout shapes (48 to 176 residues) with no external tools. Composite Fit (0 to 100) measures how closely the folded sequence matches the target, and Twin Δ measures preference for the true shape over its matched decoy twin.
+          Each model setting was asked to return one sequence per 3D backbone across 24 holdout shapes (48 to 176 residues) with no external tools. Composite Fit (0 to 100) measures how closely the predicted fold matches the target. Twin Δ is the difference between the assigned-target score and the score against its matched decoy.
+        </p>
+        <p class="section-sub" style="margin:8px 0 0;">
+          The v0.4.0 headline tables include service retries. Across all 24 shapes, the top three seed-0 mean scores were 51.89 for Gemini 4 Carbon High, 51.66 for Gemini 4 Hydrogen XHigh, and 51.62 for Gemini 4 Neon High. On the six 176-residue shapes, Neon High led at 46.44. See the <a href="https://github.com/jvogan/trace2fold/tree/v0.4.0/benchmarks">versioned JSON score archives</a>.
         </p>
       </div>
       <div class="studio-head-actions">
